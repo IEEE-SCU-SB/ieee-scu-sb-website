@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6em;
+}
+
+/* Layout */
+nav,
+main,
+footer {
+  @apply px-4 md:px-6 lg:px-8 xl:px-10;
+}
+
+main {
+  @apply flex flex-col gap-20 md:gap-24 lg:gap-28 pt-8 pb-16;
+}
+
+/* Typography */
+:root {
+  @apply text-[14px] lg:text-[16px];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+  @apply font-black;
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.2vw + 0.2rem, 1.85rem);
+  @apply font-extrabold;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 1.6vw + 0.2rem, 1.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 1.2vw + 0.15rem, 1.35rem);
+}
+
+h5 {
+  font-size: clamp(1.05rem, 0.9vw + 0.15rem, 1.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 0.7vw + 0.1rem, 1.1rem);
+}
+
+/* Utilities */
+.no-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Edge, and Safari */
+}
+
+.clip {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* Styled Components */
+hr {
+  @apply dark:border-slate-900;
+}
+
+.btn-primary {
+  @apply text-xs font-semibold tracking-wider px-4 py-2 rounded-3xl uppercase flex justify-center items-center gap-2 cursor-pointer relative;
+}
+
+.btn-primary::before {
+  @apply content-[""] absolute inset-0 bg-black scale-0 transition duration-300 rounded-3xl;
+}
+
+.btn-primary:hover::before {
+  @apply scale-100 origin-left;
+}
+
+/* chair card alignment */
+.officer-card:nth-of-type(2) {
+  @apply -order-1 sm:order-none sm:-translate-y-10;
+}
+
+/* ------------------- Animations ------------------- */
+/* Line Animation */
+.line {
+  @apply relative h-[1.5px] w-full overflow-hidden bg-transparent;
+}
+
+.line::after {
+  @apply content-[""] absolute h-full w-[60%];
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #4a90e2 75%,
+    transparent 100%
+  );
+  animation: slide-left 6s linear infinite;
+}
+
+.line:nth-child(even)::after {
+  animation: slide-right 6s linear infinite;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* MOTM Shine Animation */
+.gold-shine {
+  color: #bfa209;
+  background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 10s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
