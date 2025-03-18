@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#2D79B7",
-        purple: "#9747FF",
-        bgDark: "#020c12",
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        "primary-muted": "rgb(var(--primary-muted) / <alpha-value>)",
+        purple: "rgb(var(--purple) / <alpha-value>)",
+        "purple-muted": "rgb(var(--purple-muted) / <alpha-value>)",
+        bgDark: "#0A1420",
       },
       animation: {
         reveal: "reveal 1s linear forwards",

@@ -14,7 +14,7 @@ const CustomLink = ({ href, children }: linkProps) => {
   return (
     <Link
       href={href}
-      className={`relative font-medium after:content-[""] after:absolute after:inset-x-0 after:bottom-[-2px] after:h-[0.8px] after:bg-black dark:after:bg-white after:scale-x-0 after:transition hover:after:scale-x-100`}
+      className={`relative font-medium hover:text-primary dark:text-slate-200 dark:hover:text-white after:content-[""] after:absolute after:inset-x-0 after:bottom-[-2px] after:h-[1px] after:bg-primary dark:after:bg-white after:scale-x-0 after:transition hover:after:scale-x-100`}
       aria-label={children?.toString()}
     >
       {children}

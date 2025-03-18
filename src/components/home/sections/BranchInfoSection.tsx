@@ -38,7 +38,7 @@ export default function BranchInfoSection() {
   return (
     <section
       id="branch-info"
-      className="flex flex-col gap-20 md:gap-24 md:flex-row justify-between px-4 md:px-6 lg:px-8 xl:px-10"
+      className="flex flex-col gap-20 md:gap-24 md:flex-row justify-between px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12"
     >
       <div className="flex flex-col justify-center gap-4">
         <h2 className="mb-2">

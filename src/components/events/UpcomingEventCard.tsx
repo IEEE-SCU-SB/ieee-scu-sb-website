@@ -39,7 +39,7 @@ export default function UpcomingEventCard({
       <Image
         src={image.src}
         alt={image.alt}
-        className="w-full h-full md:order-2 bg-black/15"
+        className="w-full h-full md:order-2 bg-black/15 object-cover"
       />
 
       {/* Event Info */}

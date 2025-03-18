@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme (RGB Values) */
+:root {
+  /* Primary Colors */
+  --primary: 45 121 183; /* Default primary */
+  --primary-muted: 35 103 161; /* Slightly darker for contrast */
+
+  /* Purple Colors */
+  --purple: 132 56 230; /* Default purple */
+  --purple-muted: 120 50 210; /* Slightly darker for contrast */
+
+  /* Light Mode Adjustments */
+  --light-primary: 61 143 224; /* Adjusted primary for dark mode */
+  --light-primary-muted: 75 160 255; /* Lighter muted for dark mode */
+
+  --light-purple: 176 102 255; /* Adjusted purple for dark mode */
+  --light-purple-muted: 190 130 255; /* Lighter muted for dark mode */
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --primary: var(--light-primary);
+  --primary-muted: var(--light-primary-muted);
+
+  --purple: var(--light-purple);
+  --purple-muted: var(--light-purple-muted);
+}
+
+/* Scrolling Defaults */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6em;
@@ -11,16 +39,16 @@ html {
 nav,
 main,
 footer {
-  @apply px-4 md:px-6 lg:px-8 xl:px-10;
+  @apply px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12;
 }
 
 main {
-  @apply flex flex-col gap-20 md:gap-24 lg:gap-28 pt-8 pb-16;
+  @apply flex flex-col gap-20 md:gap-24 lg:gap-28 py-10;
 }
 
 /* Typography */
 :root {
-  @apply text-[14px] lg:text-[16px];
+  @apply text-sm lg:text-base;
 }
 
 h1,
@@ -75,7 +103,7 @@ h6 {
 
 /* Styled Components */
 hr {
-  @apply dark:border-slate-900;
+  @apply dark:border-slate-800;
 }
 
 .btn-primary {
@@ -96,7 +124,7 @@ hr {
 }
 
 /* ------------------- Animations ------------------- */
-/* Line Animation */
+/* Officers Section Line Animation */
 .line {
   @apply relative h-[1.5px] w-full overflow-hidden bg-transparent;
 }

@@ -14,7 +14,7 @@ export default function LatestEventCard({
   socialMediaPostLinks,
 }: LatestEvent) {
   return (
-    <div className="shadow-sm rounded-xl overflow-hidden mx-auto border dark:border-slate-900 max-w-lg bg-slate-50 dark:bg-slate-800/15">
+    <div className="shadow-sm rounded-xl overflow-hidden mx-auto border dark:border-slate-700/50 max-w-lg bg-slate-50/70 dark:bg-slate-800/20">
       {/* Event Image */}
       <Image
         src={image.src}
@@ -30,7 +30,7 @@ export default function LatestEventCard({
           <div className="flex justify-between items-baseline gap-x-4 flex-wrap">
             <p
               className={`font-bold tracking-wide text-sm flex gap-1 items-baseline ${
-                category === "technical" ? "text-primary" : "text-purple"
+                category === "technical" ? "text-primary-muted" : "text-purple-muted"
               }`}
             >
               <CalendarDaysIcon className="size-3" />

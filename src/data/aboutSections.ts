@@ -24,7 +24,10 @@ export const aboutSections: AboutSection[] = [
     logoWhite: { src: ieeeLogoWhite, alt: "IEEE Logo" },
     description:
       "IEEE Pronounced &quot;I-triple-E&quot; is the world&apos;s largest technical professional organization, uniting over 400,000 members globally to advance technology for humanity. It is the trusted voice for engineering, computing, and technology information around the globe.",
-    learnMoreLink: "https://www.ieee.org",
+    learnMoreLink: {
+      title: "Visit IEEE official website",
+      url: "https://www.ieee.org",
+    },
   },
   {
     id: "region8",
@@ -33,7 +36,10 @@ export const aboutSections: AboutSection[] = [
     logoWhite: { src: region8LogoWhite, alt: "IEEE Region 8 Logo" },
     description:
       "IEEE is divided into 10 global regions, each representing a geographical area to better organize and serve its members. Region 8, to which we belong, covers Europe, Africa, and the Middle East.",
-    learnMoreLink: "https://ieeer8.org",
+    learnMoreLink: {
+      title: "Learn more about IEEE Region-8",
+      url: "https://ieeer8.org",
+    },
   },
   {
     id: "ieeeEgyptSection",
@@ -42,6 +48,9 @@ export const aboutSections: AboutSection[] = [
     logoWhite: { src: sacLogoWhite, alt: "IEEE Egypt SAC Logo" },
     description:
       "Within each IEEE region, geographical areas are further divided into Sections to manage local activities and member engagement. We are part of the Egypt Section, one of over 50 Sections in Region 8, which includes more than 70 student branches across the country.",
-    learnMoreLink: "https://sac.ieee.org.eg",
+    learnMoreLink: {
+      title: "Explore IEEE Egypt Section",
+      url: "https://sac.ieee.org.eg",
+    },
   },
 ];

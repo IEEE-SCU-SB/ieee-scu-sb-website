@@ -67,7 +67,7 @@ export interface AboutSection {
   logo: ImageType;
   logoWhite: ImageType;
   description: string;
-  learnMoreLink?: string;
+  learnMoreLink?: { title: string; url: string };
 }
 
 export interface Committee {

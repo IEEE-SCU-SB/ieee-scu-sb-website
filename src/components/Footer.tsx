@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../public/assets/logo.webp";
 import logoWhite from "../public/assets/logo-white.webp";
 import SocialMedia from "./SocialMedia";
 import { branchContacts, socialMediaLinks } from "@/data/branchContacts";
@@ -15,14 +16,23 @@ export default function Footer() {
     { name: "Contact Us", href: "/contact" },
   ];
   return (
-    <footer className="relative border-t bg-primary dark:bg-bgDark dark:border-slate-900 mt-auto py-8 text-white dark:text-slate-200 z-10">
-      <div className="flex flex-col md:flex-row justify-between md:items-center gap-8 text-sm">
+    <footer className="relative border-t dark:bg-bgDark dark:border-slate-800 mt-auto py-8 dark:text-slate-200 z-10">
+      <div className="flex flex-col md:flex-row justify-between md:items-center gap-8 text-sm font-medium">
+        <Image
+          src={logo}
+          alt="IEEE Logo"
+          width={150}
+          unoptimized
+          quality={100}
+          className="dark:hidden"
+        />
         <Image
           src={logoWhite}
           alt="IEEE Logo"
           width={150}
           unoptimized
           quality={100}
+          className="hidden dark:block"
         />
 
         <div className="grid grid-cols-2 place-items-between gap-y-3 gap-x-8 md:gap-x-14">
@@ -32,10 +42,7 @@ export default function Footer() {
               href={link.href}
               className="hover:translate-x-2 transition ease-linear dark:hover:text-white"
             >
-              <span
-                className="relative pb-1 before:content-[''] before:absolute before:bottom-0 before:w-full before:h-[1.4px] before:bg-white
-              before:scale-x-0 hover:before:scale-x-100 before:transition before:ease-linear before:origin-left"
-              >
+              <span className="relative pb-1 before:content-[''] before:absolute before:bottom-0 before:w-full before:h-[1px] before:bg-black dark:before:bg-slate-200 before:scale-x-0 hover:before:scale-x-100 before:transition before:ease-linear before:origin-left">
                 {link.name}
               </span>
             </Link>
@@ -54,7 +61,7 @@ export default function Footer() {
             </li>
           </ul>
           <SocialMedia
-            accent="white"
+            accent="black"
             facebook={socialMediaLinks.facebook}
             instagram={socialMediaLinks.instagram}
             linkedin={socialMediaLinks.linkedin}
@@ -62,8 +69,10 @@ export default function Footer() {
           />
         </div>
       </div>
-      <hr className="my-6 opacity-40 dark:opacity-100" />
-      <p className="text-xs">&copy; IEEE SCU SB | 2025 All rights reserved.</p>
+      <hr className="my-8" />
+      <p className="text-xs text-slate-800 dark:text-slate-300">
+        &copy; 2025 IEEE SCU SB. All rights reserved.
+      </p>
     </footer>
   );
 }

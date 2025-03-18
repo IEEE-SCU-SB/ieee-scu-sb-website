@@ -1,6 +1,6 @@
 export default function MissionAndVisionSection() {
   return (
-    <section className="relative flex flex-col gap-24 md:flex-row justify-between px-4 md:px-6 lg:px-8 xl:px-10 py-16 md:py-24">
+    <section className="relative flex flex-col gap-24 md:flex-row justify-between px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 py-16 md:py-24">
       <div
         className="absolute inset-0 -z-10 opacity-40 dark:opacity-30"
         style={{
@@ -14,16 +14,16 @@ export default function MissionAndVisionSection() {
         <h2>Our Mission</h2>
         <hr className="my-3" />
         <p className="dark:text-slate-200">
-          Cultivating an environment where students grow and thrive through
-          learning and collaboration.
+          Creating an empowering environment where students thrive, innovate,
+          and excel through learning and collaboration.
         </p>
       </section>
       <section className="max-w-xl">
         <h2>Our Vision</h2>
         <hr className="my-3" />
         <p className="dark:text-slate-200">
-          To be the spark that ignites excellence, leadership, and growth in
-          future innovators.
+          To be the catalyst that sparks excellence, leadership, and
+          transformative growth in future innovators.
         </p>
       </section>
     </section>

@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import NextPageLink from "@/components/NextPageLink";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Header from "@/components/Header";
 import { aboutSections } from "@/data/aboutSections";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import Header from "@/components/Header";
+import NextPageLink from "@/components/NextPageLink";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const ScrollLink = ({
   label,
@@ -82,6 +82,7 @@ export default function About() {
           </ul>
         </nav>
       </Header>
+
       <main className="relative">
         <div className="relative grid gap-24 sm:gap-32 md:gap-44 max-w-3xl mx-auto translate-x-3 sm:translate-x-10">
           {/* Scrolling gradient Line */}
@@ -117,7 +118,7 @@ export default function About() {
                 width={95}
                 unoptimized
                 quality={100}
-                className="mb-3 dark:hidden"
+                className="dark:hidden"
               />
               {/* Dark mode Image */}
               <Image
@@ -126,19 +127,18 @@ export default function About() {
                 width={95}
                 unoptimized
                 quality={100}
-                className="mb-4 hidden dark:block"
+                className="hidden dark:block"
               />
-              <h2 className="sr-only">{section.label}</h2>
-              <h2 className="text-xl font-bold">{section.label}</h2>
+              <h2 className="text-xl font-bold my-2">{section.label}</h2>
               <p className="dark:text-slate-200">{section.description}</p>
               {section.learnMoreLink && (
                 <a
-                  href={section.learnMoreLink}
+                  href={section.learnMoreLink.url}
                   target="_blank"
                   className="text-primary text-sm inline-block mt-3 font-medium group"
                 >
-                  Learn More{" "}
-                  <ChevronRightIcon className="inline size-3 group-hover:translate-x-1 transition" />
+                  {section.learnMoreLink.title}
+                  <ChevronRightIcon className="inline ml-1 size-3 group-hover:translate-x-1 transition" />
                 </a>
               )}
             </section>

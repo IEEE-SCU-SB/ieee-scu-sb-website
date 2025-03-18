@@ -22,6 +22,7 @@ export default function GoogleMap() {
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full h-full"
         onLoad={() => setMapLoaded(true)}
+        title="Google Map showing our location in Ismailia, Egypt"
       ></iframe>
     </div>
   );
