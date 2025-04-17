@@ -8,7 +8,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "IEEE SCU SB",
-  description: "IEEE Suez Canal Univerity Student Branch",
+  description:
+    "Explore IEEE SCU SB: discover upcoming events, meet our teams, and join a vibrant community advancing technology and leadership.",
 };
 
 export default function RootLayout({

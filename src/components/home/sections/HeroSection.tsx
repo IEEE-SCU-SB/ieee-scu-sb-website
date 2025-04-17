@@ -32,7 +32,7 @@ export default function HeroSection() {
         <Image
           src={logoShape}
           alt="Logo"
-          width={80}
+          width={60}
           unoptimized={true}
           quality={100}
           className="dark:hidden"
@@ -40,7 +40,7 @@ export default function HeroSection() {
         <Image
           src={logoShapeWhite}
           alt="Logo"
-          width={80}
+          width={60}
           unoptimized={true}
           quality={100}
           className="hidden dark:block"
@@ -50,21 +50,23 @@ export default function HeroSection() {
         <CustomLink href="/contact">Contact Us</CustomLink>
       </nav>
 
-      <div className="flex items-center justify-center mt-auto w-fit mx-auto z-10">
-        <Image
-          src={logoShape}
-          alt="IEEE Suez Canal University logo"
-          unoptimized={true}
-          quality={100}
-          className="w-20 md:w-24 lg:w-32 dark:hidden"
-        />
-        <Image
-          src={logoShapeWhite}
-          alt="IEEE Suez Canal University logo"
-          unoptimized={true}
-          quality={100}
-          className="w-20 md:w-24 lg:w-32 hidden dark:block"
-        />
+      <div className="flex items-center justify-center gap-2 mt-auto w-fit mx-auto z-10">
+        <div className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6rem]">
+          <Image
+            src={logoShape}
+            alt="IEEE Suez Canal University logo"
+            unoptimized={true}
+            quality={100}
+            className="w-[1.45em] dark:hidden"
+          />
+          <Image
+            src={logoShapeWhite}
+            alt="IEEE Suez Canal University logo"
+            unoptimized={true}
+            quality={100}
+            className="w-[1.45em] hidden dark:block"
+          />
+        </div>
         <h1 className="leading-none font-black m-0 text-primary dark:text-white">
           <span className="text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[6rem] block font-black">
             IEEE
