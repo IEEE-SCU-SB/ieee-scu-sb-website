@@ -1,16 +1,11 @@
 import { Board } from "./types";
 // Board Photos
 import webHead from "@/public/board/web_head.webp";
-import webVice from "@/public/board/web_vice.webp";
 import aiHead from "@/public/board/ai_head.webp";
 import roboticsHead from "@/public/board/robotics_head.webp";
-import roboticsVice from "@/public/board/robotics_vice.webp";
 import cyberHead from "@/public/board/cyber_head.webp";
-import electronicsHead from "@/public/board/electronics_head.webp";
 import mediaHead from "@/public/board/media_head.webp";
-import mediaVice from "@/public/board/media_vice.webp";
 import hrHead from "@/public/board/hr_head.webp";
-import prHead from "@/public/board/pr_head.webp";
 import eventHead from "@/public/board/event_head.webp";
 
 export const board: Board[] = [
@@ -24,16 +19,6 @@ export const board: Board[] = [
       image: {
         src: webHead,
         alt: "Head of Web Development Committee",
-      },
-    },
-    vice: {
-      name: "Ahmed Negm",
-      bio: "A web development professional with previous experience in freelance work, having built numerous web pages. With strong management skills and the ability to effectively motivate and guide the team. He organizes training sessions to explain web development, assign tasks, and track the progress of team members to ensure continuous growth and improvement.",
-      linkedin: "https://www.linkedin.com/in/ahmed-negm-758273230",
-      mail: "negm3266@gmail.com",
-      image: {
-        src: webVice,
-        alt: "Vice Head of Web Development Committee",
       },
     },
   },
@@ -62,16 +47,6 @@ export const board: Board[] = [
         alt: "Head of Robotics Committee",
       },
     },
-    vice: {
-      name: "Mohammed Abdelmogeth",
-      bio: "A Mechatronics Engineer and Vice Head of Robotics (Head of the Mechanical Department). Passionate about mechanical design, automation, and manufacturing, with experience in developing mechanical systems and performance analysis. Committed to fostering a hands-on learning environment and enhancing the team's skills in design and fabrication.",
-      linkedin: "https://www.linkedin.com/in/mohammed-abdelmogeth-516247329",
-      mail: "mohammedabdelmogeth18@gmail.com",
-      image: {
-        src: roboticsVice,
-        alt: "Vice Head of Robotics Committee",
-      },
-    },
   },
   {
     id: "cyber-security",
@@ -86,39 +61,29 @@ export const board: Board[] = [
       },
     },
   },
-  {
-    id: "electronics",
-    head: {
-      name: "Ali Ayman",
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam illo, itaque dolor quaerat harum est non labore quia expedita repudiandae minus cupiditate hic asperiores cumque deleniti nemo. Pariatur repudiandae esse sunt libero iusto animi delectus aliquam, necessitatibus quidem laudantium.",
-      linkedin: "",
-      mail: "",
-      image: {
-        src: electronicsHead,
-        alt: "Head of Electronics Committee",
-      },
-    },
-  },
+  // {
+  //   id: "electronics",
+  //   head: {
+  //     name: "Ali Ayman",
+  //     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam illo, itaque dolor quaerat harum est non labore quia expedita repudiandae minus cupiditate hic asperiores cumque deleniti nemo. Pariatur repudiandae esse sunt libero iusto animi delectus aliquam, necessitatibus quidem laudantium.",
+  //     linkedin: "",
+  //     mail: "",
+  //     image: {
+  //       src: electronicsHead,
+  //       alt: "Head of Electronics Committee",
+  //     },
+  //   },
+  // },
   {
     id: "media",
     head: {
-      name: "Samia Amr",
-      bio: "An experienced media professional with skills in graphic design, photography, and video editing. She leads the team with creativity and a focus on delivering high-quality visual content that enhances audience engagement and supports event success.",
-      linkedin: "https://www.linkedin.com/in/samia-amr-25b157248",
-      mail: "samiaamr26@gmail.com",
-      image: {
-        src: mediaHead,
-        alt: "Head of Media Committee",
-      },
-    },
-    vice: {
       name: "Youmna Mohammed",
       bio: "Supporting the creative vision of the Committee by skilfully handling multimedia tasks, including graphic design, photography and video production. Assisting in bringing ideas to life through visuals that align with our goals.",
       linkedin: "https://www.linkedin.com/in/youmna-muhammed-b00306303",
       mail: "Y60812344@gmail.com",
       image: {
-        src: mediaVice,
-        alt: "Vice Head of Media Committee",
+        src: mediaHead,
+        alt: "Head of Media Committee",
       },
     },
   },
@@ -135,19 +100,19 @@ export const board: Board[] = [
       },
     },
   },
-  {
-    id: "pr",
-    head: {
-      name: "Jumannah Farouk",
-      bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam illo, itaque dolor quaerat harum est non labore quia expedita repudiandae minus cupiditate hic asperiores cumque deleniti nemo. Pariatur repudiandae esse sunt libero iusto animi delectus aliquam, necessitatibus quidem laudantium.",
-      linkedin: "",
-      mail: "",
-      image: {
-        src: prHead,
-        alt: "Head of PR Committee",
-      },
-    },
-  },
+  // {
+  //   id: "pr",
+  //   head: {
+  //     name: "Jumannah Farouk",
+  //     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam illo, itaque dolor quaerat harum est non labore quia expedita repudiandae minus cupiditate hic asperiores cumque deleniti nemo. Pariatur repudiandae esse sunt libero iusto animi delectus aliquam, necessitatibus quidem laudantium.",
+  //     linkedin: "",
+  //     mail: "",
+  //     image: {
+  //       src: prHead,
+  //       alt: "Head of PR Committee",
+  //     },
+  //   },
+  // },
   {
     id: "event-coordination",
     head: {

@@ -1,8 +1,8 @@
 import { Motm } from "./types";
 
 export const motm: Motm = {
-  // name: "Mohamed Fareed",
-  // committee: "Cybersecurity Head",
-  // image: { src: cyberHead, alt: "Member of The Month Photo" },
-  // linkedin: "#",
+  // name: "Motm Name",
+  // committee: "Motm Committee",
+  // image: { src: Motm Photo, alt: "Member of The Month Photo" },
+  // linkedin: "#Motm Linkedin",
 };

@@ -23,21 +23,29 @@ export default function LatestEventCard({
       ></Image>
 
       {/* Event Info */}
-      <div className="flex flex-col gap-4 justify-evenly p-4 md:p-6">
+      <div className="flex flex-col gap-4 p-4 md:p-6">
         {/* Title, Date and Location */}
         <div>
           <h3 className="max-w-lg text-lg md:text-xl mb-2">{title}</h3>
           <div className="flex justify-between items-baseline gap-x-4 flex-wrap">
-            <p
-              className={`font-bold tracking-wide text-sm flex gap-1 items-baseline ${
-                category === "technical" ? "text-primary-muted" : "text-purple-muted"
-              }`}
-            >
-              <CalendarDaysIcon className="size-3" />
+            <p className="font-medium tracking-wide text-sm flex gap-1 items-baseline">
+              <CalendarDaysIcon
+                className={`size-3 ${
+                  category === "technical"
+                    ? "text-primary-muted"
+                    : "text-purple-muted"
+                }`}
+              />
               {date}
             </p>
             <p className="font-medium text-sm flex gap-1 items-baseline">
-              <MapPinIcon className="size-3 text-red-600" />
+              <MapPinIcon
+                className={`size-3 ${
+                  category === "technical"
+                    ? "text-primary-muted"
+                    : "text-purple-muted"
+                }`}
+              />
               {location}
             </p>
           </div>

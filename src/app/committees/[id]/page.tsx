@@ -143,10 +143,12 @@ export default async function CommitteeDetails(props: {
         </section>
 
         {/* Committee Board */}
-        <section>
-          <h2 className="mb-8 text-center">Committee&apos;s Board</h2>
-          <div className={committeeVice ? "grid gap-8" : ""}>
-            {committeeHead && (
+        {committeeHead && (
+          <section>
+            <h2 className="mb-8 text-center">
+              Committee&apos;s {committeeVice ? "Board" : "Head"}
+            </h2>
+            <div className={committeeVice ? "grid gap-8" : ""}>
               <BoardCard
                 category={committee.category}
                 name={committeeHead.name}
@@ -159,23 +161,23 @@ export default async function CommitteeDetails(props: {
                   alt: committeeHead.image.alt,
                 }}
               />
-            )}
-            {committeeVice && (
-              <BoardCard
-                category={committee.category}
-                name={committeeVice.name}
-                position={`${committee.title} Vice Head`}
-                bio={committeeVice.bio}
-                linkedin={committeeVice.linkedin}
-                mail={committeeVice.mail}
-                image={{
-                  src: committeeVice.image.src,
-                  alt: committeeVice.image.alt,
-                }}
-              />
-            )}
-          </div>
-        </section>
+              {committeeVice && (
+                <BoardCard
+                  category={committee.category}
+                  name={committeeVice.name}
+                  position={`${committee.title} Vice Head`}
+                  bio={committeeVice.bio}
+                  linkedin={committeeVice.linkedin}
+                  mail={committeeVice.mail}
+                  image={{
+                    src: committeeVice.image.src,
+                    alt: committeeVice.image.alt,
+                  }}
+                />
+              )}
+            </div>
+          </section>
+        )}
 
         <div className="mx-auto">
           <NextPageLink href="/join">Interested in Joining Us?</NextPageLink>
