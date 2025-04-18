@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://ieeescu.vercel.app',
+    siteUrl: 'https://ieeescu.org',
     generateRobotsTxt: true,
   }
   
