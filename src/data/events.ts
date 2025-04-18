@@ -2,13 +2,13 @@ import { LatestEvent, UpcomingEvent } from "./types";
 // upcoming Events Images
 /* --------------------------------------------------------------- */
 // Latest Events Images
-import techNights from "@/public/events/latest/tech_nights.webp";
-import robotiva from "@/public/events/latest/robotiva.webp";
-import promptEng from "@/public/events/latest/prompt_eng.webp";
-import huaweiIct from "@/public/events/latest/huawei_ict.webp";
-import uiuxEssentials from "@/public/events/latest/uiux_essentials.webp";
-import hrGuided from "@/public/events/latest/hr_guided.webp";
-import makeYourReel from "@/public/events/latest/make_your_reel.webp";
+import techNights from "@/assets/events/latest/tech_nights.webp";
+import robotiva from "@/assets/events/latest/robotiva.webp";
+import promptEng from "@/assets/events/latest/prompt_eng.webp";
+import huaweiIct from "@/assets/events/latest/huawei_ict.webp";
+import uiuxEssentials from "@/assets/events/latest/uiux_essentials.webp";
+import hrGuided from "@/assets/events/latest/hr_guided.webp";
+import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
 // Note: Events are in chronological order with the most recent event being first in the data structure.
 

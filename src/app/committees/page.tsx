@@ -31,7 +31,7 @@ export default function Committees() {
             className={`rounded-full px-3 py-1 text-sm font-medium border border-black dark:border-white ${
               selectedCategory === "all"
                 ? "bg-black text-white dark:bg-white dark:text-black"
-                : "bg-white text-black  dark:bg-bgDark dark:text-white"
+                : "bg-background text-foreground"
             } hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black`}
           >
             All
@@ -42,7 +42,7 @@ export default function Committees() {
             className={`rounded-full px-3 py-1 text-sm font-medium border border-primary ${
               selectedCategory === "technical"
                 ? "bg-primary text-white"
-                : "bg-white text-primary dark:bg-bgDark dark:text-primary"
+                : "bg-background text-primary"
             } hover:bg-primary hover:text-white transition`}
           >
             Technical
@@ -53,7 +53,7 @@ export default function Committees() {
             className={`rounded-full px-3 py-1 text-sm font-medium border border-purple ${
               selectedCategory === "non-technical"
                 ? "bg-purple text-white"
-                : "bg-white text-purple dark:bg-bgDark dark:text-purple"
+                : "bg-background text-purple"
             } hover:bg-purple hover:text-white transition`}
           >
             Non-Technical

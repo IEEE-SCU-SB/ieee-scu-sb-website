@@ -17,7 +17,7 @@ export default function CommitteeCard({
 }: CommitteeCardProps) {
   return (
     <div
-      className={`relative flex items-center bg-white dark:bg-bgDark shadow-sm py-10 px-8 rounded-xl overflow-hidden w-full max-w-md sm:max-w-lg gap-8 border ${
+      className={`relative flex items-center bg-background shadow-sm py-10 px-8 rounded-xl overflow-hidden w-full max-w-md sm:max-w-lg gap-8 border ${
         category === "non-technical"
           ? "border-purple/15"
           : "border-primary/15"

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/assets/logo.webp";
-import logoWhite from "../public/assets/logo-white.webp";
+import logo from "@/assets/logos/logo.webp";
+import logoWhite from "@/assets/logos/logo-white.webp";
 import SocialMedia from "./SocialMedia";
 import { branchContacts, socialMediaLinks } from "@/data/branchContacts";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
@@ -16,7 +16,7 @@ export default function Footer() {
     { name: "Contact Us", href: "/contact" },
   ];
   return (
-    <footer className="relative border-t dark:bg-bgDark dark:border-slate-800 mt-auto py-8 dark:text-slate-200 z-10">
+    <footer className="relative bg-background border-t border-border mt-auto py-8 dark:text-slate-200 z-10">
       <div className="flex flex-col md:flex-row justify-between md:items-center gap-8 text-sm font-medium">
         <Image
           src={logo}

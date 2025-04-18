@@ -1,12 +1,12 @@
 import { AboutSection } from "./types";
-import logo from "@/public/assets/logo.webp";
-import logoWhite from "@/public/assets/logo-white.webp";
-import ieeeLogo from "@/public/assets/ieee-logo.webp";
-import ieeeLogoWhite from "@/public/assets/ieee-logo-white.webp";
-import sacLogo from "@/public/assets/sac-logo.svg";
-import sacLogoWhite from "@/public/assets/sac-logo-white.svg";
-import region8Logo from "@/public/assets/region8-logo.webp";
-import region8LogoWhite from "@/public/assets/region8-logo-white.webp";
+import logo from "@/assets/logos/logo.webp";
+import logoWhite from "@/assets/logos/logo-white.webp";
+import ieeeLogo from "@/assets/logos/ieee-logo.webp";
+import ieeeLogoWhite from "@/assets/logos/ieee-logo-white.webp";
+import sacLogo from "@/assets/logos/sac-logo.svg";
+import sacLogoWhite from "@/assets/logos/sac-logo-white.svg";
+import region8Logo from "@/assets/logos/region8-logo.webp";
+import region8LogoWhite from "@/assets/logos/region8-logo-white.webp";
 
 export const aboutSections: AboutSection[] = [
   {
@@ -22,8 +22,7 @@ export const aboutSections: AboutSection[] = [
     label: "IEEE: Institute of Electrical and Electronics Engineers",
     logo: { src: ieeeLogo, alt: "IEEE Logo" },
     logoWhite: { src: ieeeLogoWhite, alt: "IEEE Logo" },
-    description:
-      "IEEE Pronounced &quot;I-triple-E&quot; is the world&apos;s largest technical professional organization, uniting over 400,000 members globally to advance technology for humanity. It is the trusted voice for engineering, computing, and technology information around the globe.",
+    description: `IEEE Pronounced "I-triple-E" is the world's largest technical professional organization, uniting over 400,000 members globally to advance technology for humanity. It is the trusted voice for engineering, computing, and technology information around the globe.`,
     learnMoreLink: {
       title: "Visit IEEE official website",
       url: "https://www.ieee.org",

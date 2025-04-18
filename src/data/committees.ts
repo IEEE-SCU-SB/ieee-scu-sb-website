@@ -1,14 +1,14 @@
 import { Committee } from "./types";
 // Illustrations
-import cyberImage from "@/public/illustrations/cyber.svg";
-import electronicsImage from "@/public/illustrations/electronics.svg";
-import aiImage from "@/public/illustrations/ai.svg";
-import webDevImage from "@/public/illustrations/web.svg";
-import roboticsImage from "@/public/illustrations/robotics.svg";
-import mediaImage from "@/public/illustrations/media.svg";
-import hrImage from "@/public/illustrations/hr.svg";
-import prImage from "@/public/illustrations/pr.svg";
-import eventImage from "@/public/illustrations/event.svg";
+import cyberImage from "@/assets/illustrations/cyber.svg";
+import electronicsImage from "@/assets/illustrations/electronics.svg";
+import aiImage from "@/assets/illustrations/ai.svg";
+import webDevImage from "@/assets/illustrations/web.svg";
+import roboticsImage from "@/assets/illustrations/robotics.svg";
+import mediaImage from "@/assets/illustrations/media.svg";
+import hrImage from "@/assets/illustrations/hr.svg";
+import prImage from "@/assets/illustrations/pr.svg";
+import eventImage from "@/assets/illustrations/event.svg";
 
 export const committees: Committee[] = [
   /* ------------------- Web Development ------------------- */

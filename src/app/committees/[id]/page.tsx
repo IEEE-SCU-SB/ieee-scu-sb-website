@@ -35,7 +35,7 @@ export default async function CommitteeDetails(props: {
       >
         <Link
           href={"/committees"}
-          className="group mb-8 w-fit text-slate-600 dark:text-slate-300 flex items-center gap-1 text-xs font-medium border border-slate-200 dark:border-slate-800 py-1 px-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800"
+          className="group mb-8 w-fit text-slate-700 dark:text-slate-200 flex items-center gap-1 text-xs font-medium border border-slate-700 dark:border-slate-700 py-1 px-3 rounded-full hover:bg-slate-700 hover:text-white dark:hover:bg-slate-700"
         >
           <ArrowLeftIcon className="size-3 stroke-2 group-hover:-translate-x-1 transition" />
           Back
@@ -131,7 +131,7 @@ export default async function CommitteeDetails(props: {
             {committee.activities.map((activity, index) => (
               <li
                 key={index}
-                className="p-4 shadow-sm rounded-xl max-w-sm border dark:border-slate-900 text-center"
+                className="p-4 shadow-sm rounded-xl max-w-sm border border-border text-center"
               >
                 <h3 className="text-base font-semibold mb-1">
                   {activity.title}

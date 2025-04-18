@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "IEEE SCU SB",
   description:
-    "Explore IEEE SCU SB: discover upcoming events, meet our teams, and join a vibrant community advancing technology and leadership.",
+    "A legacy of over 10 years, IEEE Suez Canal University Student Branch shapes future engineers through hands-on learning and professional development.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased dark:bg-bgDark dark:text-white flex flex-col min-h-svh max-w-[2000px] mx-auto`}
+        className={`${montserrat.className} antialiased bg-background text-foreground flex flex-col min-h-svh max-w-[2000px] mx-auto`}
       >
         <Navbar />
         {children}

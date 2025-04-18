@@ -1,5 +1,5 @@
 import type { Motm as MotmType } from "@/data/types";
-import goldenQmark from "@/public/assets/golden-qmark.webp";
+import goldenQmark from "@/assets/misc/golden-qmark.webp";
 import Image from "next/image";
 
 export default function Motm({ name, committee, image, linkedin }: MotmType) {

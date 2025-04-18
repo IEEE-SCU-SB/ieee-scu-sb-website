@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import SelectTheme from "./SelectTheme";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/assets/logo.webp";
-import logoWhite from "../public/assets/logo-white.webp";
+import logo from "@/assets/logos/logo.webp";
+import logoWhite from "@/assets/logos/logo-white.webp";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 interface linkProps {
@@ -84,12 +84,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`flex justify-between items-center py-3 lg:py-0 top-0 border-b font-medium bg-white dark:bg-bgDark z-40 transition-all duration-300
+      className={`flex justify-between items-center py-3 lg:py-0 top-0 border-b font-medium bg-background z-40 transition-all duration-700
         ${pathname === "/" ? "fixed w-full" : "sticky"}
         ${
           pathname === "/" && !showNavbar
-            ? "bg-opacity-40 dark:bg-opacity-0 duration-700 lg:-translate-y-full border-transparent py-7 px-7 lg:invisible"
-            : "bg-opacity-100 dark:bg-opacity-100 duration-700 border-slate-200 dark:border-slate-800 lg:-translate-y-0"
+            ? "bg-opacity-40 dark:bg-opacity-0 border-transparent py-7 px-7 lg:-translate-y-full lg:invisible"
+            : "bg-opacity-100 dark:bg-opacity-100 border-border lg:-translate-y-0"
         }
       `}
     >
@@ -124,7 +124,7 @@ export default function Navbar() {
         {/* Menu Links */}
         <div
           ref={menuRef}
-          className={`fixed top-0 right-0 h-screen w-[70%] max-w-[280px] flex flex-col p-6 lg:p-0 bg-white dark:bg-bgDark border-l dark:border-slate-800 transition duration-300 lg:static lg:translate-x-0 lg:w-full lg:max-w-none lg:h-fit lg:flex-row lg:gap-[3vw] lg:border-none lg:bg-transparent lg:dark:bg-transparent
+          className={`fixed top-0 right-0 h-screen w-[70%] max-w-[280px] flex flex-col p-6 lg:p-0 bg-background border-l border-border transition duration-300 lg:static lg:translate-x-0 lg:w-full lg:max-w-none lg:h-fit lg:flex-row lg:gap-[3vw] lg:border-none lg:bg-transparent lg:dark:bg-transparent
           ${isOpen ? "translate-x-0" : "translate-x-[105%]"}`}
         >
           <button
@@ -155,7 +155,7 @@ export default function Navbar() {
           </CustomLink>
           <hr className="mt-2 mb-4 lg:hidden" />
           <div className="relative lg:my-auto">
-            <span className="hidden lg:block absolute translate-y-[25%] -left-1/2 h-6 border dark:border-slate-800"></span>
+            <span className="hidden lg:block absolute translate-y-[25%] -left-1/2 h-6 border border-border"></span>
             <SelectTheme />
           </div>
         </div>

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import type { UpcomingEvent } from "@/data/types";
 import SocialMedia from "../SocialMedia";
-import circuitPattern from "@/public/assets/circuit-pattern.svg";
-import wavyLine from "@/public/assets/wavy-line.svg";
+import circuitPattern from "@/assets/misc/circuit-pattern.svg";
+import wavyLine from "@/assets/misc/wavy-line.svg";
 import { MapPinIcon } from "@heroicons/react/24/outline";
 import { CalendarDaysIcon } from "@heroicons/react/24/solid";
 
@@ -20,7 +20,7 @@ export default function UpcomingEventCard({
   return (
     <div
       className={`upcoming-event-card relative shadow-sm rounded-xl overflow-hidden
-        md:grid grid-cols-2 max-w-lg md:max-w-5xl mx-auto border dark:border-slate-800 
+        md:grid grid-cols-2 max-w-lg md:max-w-5xl mx-auto border border-border
         before:content-[""] before:absolute before:inset-0 before:-z-10 ${
           category === "non-technical"
             ? "before:bg-[radial-gradient(140vw_circle_at_90%_50%,_rgba(151,_71,_255,_0.2),_transparent_40%)]"
@@ -39,25 +39,33 @@ export default function UpcomingEventCard({
       <Image
         src={image.src}
         alt={image.alt}
-        className="w-full h-full md:order-2 bg-black/15 object-cover"
+        className="w-full h-full md:order-2 object-cover bg-black/15"
       />
 
       {/* Event Info */}
-      <div className="flex flex-col gap-6 justify-evenly p-4 md:p-8">
+      <div className="flex flex-col gap-4 p-4 md:p-8">
         {/* Title, Date and Location */}
         <div>
           <h3 className="max-w-lg text-xl md:text-2xl mb-2">{title}</h3>
           <div className="flex justify-between items-baseline gap-x-4 flex-wrap">
-            <p
-              className={`font-bold text-sm tracking-wide flex gap-1 items-baseline ${
-                category === "technical" ? "text-primary" : "text-purple"
-              }`}
-            >
-              <CalendarDaysIcon className="size-3" />
+            <p className="font-medium tracking-wide text-sm flex gap-1 items-baseline">
+              <CalendarDaysIcon
+                className={`size-3 ${
+                  category === "technical"
+                    ? "text-primary-muted"
+                    : "text-purple-muted"
+                }`}
+              />
               {date}
             </p>
             <p className="font-medium text-sm flex gap-1 items-baseline">
-              <MapPinIcon className="size-3 text-red-600" />
+              <MapPinIcon
+                className={`size-3 ${
+                  category === "technical"
+                    ? "text-primary-muted"
+                    : "text-purple-muted"
+                }`}
+              />
               {location}
             </p>
           </div>

@@ -7,8 +7,8 @@ export default function MissionAndVisionSection() {
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%232d79b7' fill-opacity='1'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")`,
         }}
       >
-        <div className="absolute -z-10 inset-0 pointer-events-none bg-gradient-to-r from-white/20 dark:from-bgDark/20 via-transparent dark:via-transparent to-white/20 dark:to-bgDark/20"></div>
-        <div className="absolute -z-10 inset-0 pointer-events-none bg-gradient-to-b from-white/80 dark:from-bgDark/90 via-transparent dark:via-transparent to-white/80 dark:to-bgDark/90"></div>
+        <div className="absolute -z-10 inset-0 pointer-events-none bg-gradient-to-r from-background/20 via-transparent to-background/20"></div>
+        <div className="absolute -z-10 inset-0 pointer-events-none bg-gradient-to-b from-background/80 via-transparent to-background/80"></div>
       </div>
       <section className="max-w-xl">
         <h2>Our Mission</h2>

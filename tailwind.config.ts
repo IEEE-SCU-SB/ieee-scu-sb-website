@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "rgb(var(--primary) / <alpha-value>)",
+        "background": "rgb(var(--background) / <alpha-value>)",
+        "foreground": "rgb(var(--foreground) / <alpha-value>)",
+        "primary": "rgb(var(--primary) / <alpha-value>)",
         "primary-muted": "rgb(var(--primary-muted) / <alpha-value>)",
-        purple: "rgb(var(--purple) / <alpha-value>)",
+        "purple": "rgb(var(--purple) / <alpha-value>)",
         "purple-muted": "rgb(var(--purple-muted) / <alpha-value>)",
-        bgDark: "#0A1420",
+        "border": "rgb(var(--border) / <alpha-value>)",
       },
       animation: {
         reveal: "reveal 1s linear forwards",

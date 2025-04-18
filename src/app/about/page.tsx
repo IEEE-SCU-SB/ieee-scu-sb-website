@@ -87,7 +87,7 @@ export default function About() {
         <div className="relative grid gap-24 sm:gap-32 md:gap-44 max-w-3xl mx-auto translate-x-3 sm:translate-x-10">
           {/* Scrolling gradient Line */}
           <div
-            className="bg-slate-200 dark:bg-slate-800 absolute h-full -left-2 w-[1.4px] bg-gradient-to-b from-transparent via-sky-600 to-transparent -z-10 bg-no-repeat"
+            className="bg-border absolute h-full -left-2 w-[1.4px] bg-gradient-to-b from-transparent via-sky-600 to-transparent -z-10 bg-no-repeat"
             style={{
               backgroundPosition: `0 ${gradientPosition}`,
               backgroundSize: "100% 150px",

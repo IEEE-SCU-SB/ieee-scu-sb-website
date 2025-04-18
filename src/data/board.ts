@@ -1,12 +1,12 @@
 import { Board } from "./types";
 // Board Photos
-import webHead from "@/public/board/web_head.webp";
-import aiHead from "@/public/board/ai_head.webp";
-import roboticsHead from "@/public/board/robotics_head.webp";
-import cyberHead from "@/public/board/cyber_head.webp";
-import mediaHead from "@/public/board/media_head.webp";
-import hrHead from "@/public/board/hr_head.webp";
-import eventHead from "@/public/board/event_head.webp";
+import webHead from "@/assets/board/web_head.webp";
+import aiHead from "@/assets/board/ai_head.webp";
+import roboticsHead from "@/assets/board/robotics_head.webp";
+import cyberHead from "@/assets/board/cyber_head.webp";
+import mediaHead from "@/assets/board/media_head.webp";
+import hrHead from "@/assets/board/hr_head.webp";
+import eventHead from "@/assets/board/event_head.webp";
 
 export const board: Board[] = [
   {

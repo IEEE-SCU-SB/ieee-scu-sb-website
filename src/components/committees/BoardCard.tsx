@@ -16,7 +16,7 @@ export default function BoardCard({
   image,
 }: BoardCardProps) {
   return (
-    <div className="flex flex-col gap-y-4 gap-x-12 sm:flex-row items-center justify-between w-full max-w-4xl shadow-lg p-6 rounded-2xl mx-auto border dark:border-slate-900">
+    <div className="flex flex-col gap-y-4 gap-x-12 sm:flex-row items-center justify-between w-full max-w-4xl shadow-lg p-6 rounded-2xl mx-auto border border-border">
       {/* Image */}
       <div
         className={`w-full max-w-44 aspect-square mx-auto md:mx-0 rounded-full shadow-lg overflow-hidden sm:order-2 ${

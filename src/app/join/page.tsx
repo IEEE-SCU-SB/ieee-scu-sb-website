@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hiringIllustration from "../../public/illustrations/hiring.svg";
+import hiringIllustration from "@/assets/illustrations/hiring.svg";
 import { recruitment } from "@/data/recruitment";
 import { socialMediaLinks } from "@/data/branchContacts";
 import Header from "@/components/Header";

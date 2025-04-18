@@ -1,10 +1,10 @@
 import { Officer } from "./types";
-import ethar from "@/public/highboard/ethar.webp";
-import abdelkhalek from "@/public/highboard/abdelkhalek.webp";
-import marwan from "@/public/highboard/marwan.webp";
-import singab from "@/public/highboard/singab.webp";
-import ashrakat from "@/public/highboard/ashrakat.webp";
-import mostafa from "@/public/highboard/mostafa.webp";
+import ethar from "@/assets/highboard/ethar.webp";
+import abdelkhalek from "@/assets/highboard/abdelkhalek.webp";
+import marwan from "@/assets/highboard/marwan.webp";
+import singab from "@/assets/highboard/singab.webp";
+import ashrakat from "@/assets/highboard/ashrakat.webp";
+import mostafa from "@/assets/highboard/mostafa.webp";
 
 export const officers: Officer[] = [
   {

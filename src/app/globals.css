@@ -4,29 +4,23 @@
 
 /* Theme (RGB Values) */
 :root {
-  /* Primary Colors */
-  --primary: 45 121 183; /* Default primary */
-  --primary-muted: 35 103 161; /* Slightly darker for contrast */
-
-  /* Purple Colors */
-  --purple: 132 56 230; /* Default purple */
-  --purple-muted: 120 50 210; /* Slightly darker for contrast */
-
-  /* Light Mode Adjustments */
-  --light-primary: 61 143 224; /* Adjusted primary for dark mode */
-  --light-primary-muted: 75 160 255; /* Lighter muted for dark mode */
-
-  --light-purple: 176 102 255; /* Adjusted purple for dark mode */
-  --light-purple-muted: 190 130 255; /* Lighter muted for dark mode */
+  --background: 255 255 255;
+  --foreground: 0 0 0;
+  --primary: 45 121 183;
+  --primary-muted: 35 103 161;
+  --purple: 132 56 230;
+  --purple-muted: 120 50 210;
+  --border: 229 231 235;
 }
 
-/* Dark Mode Overrides */
 .dark {
-  --primary: var(--light-primary);
-  --primary-muted: var(--light-primary-muted);
-
-  --purple: var(--light-purple);
-  --purple-muted: var(--light-purple-muted);
+  --background: 10 20 32;
+  --foreground: 255 255 255;
+  --primary: 61 143 224;
+  --primary-muted: 75 160 255;
+  --purple: 176 102 255;
+  --purple-muted: 190 130 255;
+  --border: 30 41 59;
 }
 
 /* Scrolling Defaults */

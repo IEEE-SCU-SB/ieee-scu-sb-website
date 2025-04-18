@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import map from "@/public/assets/map.svg";
+import map from "@/assets/misc/map.svg";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 

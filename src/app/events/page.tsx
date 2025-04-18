@@ -4,7 +4,7 @@ import LatestEventCard from "@/components/events/LatestEventCard";
 import UpcomingEventCard from "@/components/events/UpcomingEventCard";
 import NextPageLink from "@/components/NextPageLink";
 import Image from "next/image";
-import zzCalendar from "@/public/illustrations/zz-calendar.svg";
+import zzCalendar from "@/assets/illustrations/zz-calendar.svg";
 
 export default function Events() {
   return (

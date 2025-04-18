@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logoShape from "@/public/assets/logo-shape-only.webp";
-import logoShapeWhite from "@/public/assets/logo-shape-only-white.webp";
+import logoShape from "@/assets/logos/logo-shape-only.webp";
+import logoShapeWhite from "@/assets/logos/logo-shape-only-white.webp";
 import InteractiveGridPattern from "../partials/InteractiveGridPattern";
 
 interface linkProps {
