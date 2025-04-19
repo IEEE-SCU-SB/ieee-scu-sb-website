@@ -15,7 +15,7 @@ export const aboutSections: AboutSection[] = [
     logo: { src: logo, alt: "IEEE SCU SB Logo" },
     logoWhite: { src: logoWhite, alt: "IEEE SCU SB Logo" },
     description:
-      "Located in Ismailia, Suez Canal University as part of the Egypt section in Region 8, our branch is committed to bridging the gap between academia and industry, providing a platform for students to develop their skills and network with like-minded individuals.",
+      "Established in 2011 and based in Ismailia at Suez Canal University, our branch is part of the Egypt Section within IEEE Region 8. We provide a work-like environment where students take on real responsibilities, meet deadlines, and grow into leadership roles through workshops, bootcamps, competitions, and talks. Our mission is to equip them with practical skills and a professional mindset for the job market, while empowering them to make a meaningful impact on the broader community.",
   },
   {
     id: "ieee",
