@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "IEEE SCU SB",
   description:
     "A legacy of over 10 years, IEEE Suez Canal University Student Branch shapes future engineers through hands-on learning and professional development.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
