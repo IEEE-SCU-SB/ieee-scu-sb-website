@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className="my-8" />
-      <p className="text-xs text-slate-800 dark:text-slate-300">
+      <p className="text-xs font-medium text-slate-800 dark:text-slate-300">
         &copy; 2025 IEEE SCU SB. All rights reserved.
       </p>
     </footer>

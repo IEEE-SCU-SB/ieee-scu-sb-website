@@ -36,7 +36,7 @@ export const officers: Officer[] = [
     mail: "ashrakat_rashwan@ieee.org",
   },
   {
-    name: "Mohamed Abdelkhalek",
+    name: "M. Abdelkhalek",
     position: "Secretary",
     image: { src: abdelkhalek, alt: "Secretary" },
     linkedin: "https://www.linkedin.com/in/muhammed-abdelkhalek-33055420a",

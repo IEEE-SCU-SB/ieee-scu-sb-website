@@ -12,7 +12,7 @@ export default function Map() {
       <div className="relative w-fit">
         <div className="absolute top-[34.4%] right-[10%] w-[35%]">
           <MapPinIcon
-            className={`w-[20%] absolute -left-[8.4%] bottom-[3.2%] text-sky-500 z-10 transition duration-700
+            className={`w-[20%] absolute -left-[8.4%] bottom-[3.2%] text-primary z-10 transition duration-700
           ${activeElement === "map" ? "scale-100" : "scale-0"}`}
           />
           <svg

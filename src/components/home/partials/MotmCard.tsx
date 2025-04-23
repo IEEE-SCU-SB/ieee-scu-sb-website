@@ -53,9 +53,9 @@ export default function Motm({ name, committee, image, linkedin }: MotmType) {
 
         {/* Bio */}
         <p className="max-w-[540px]">
-          Recognizing our outstanding Member of the Month! A big
-          thank you for your dedication and contributions to the team. Keep
-          shining and inspiring us all!
+          Recognizing our outstanding Member of the Month! A big thank you for
+          your dedication and contributions to the team. Keep shining and
+          inspiring us all!
         </p>
 
         {/* Linkedin Account */}
@@ -92,11 +92,12 @@ export default function Motm({ name, committee, image, linkedin }: MotmType) {
       className={`flex flex-col gap-8 sm:flex-row items-center justify-evenly max-w-4xl mx-auto`}
     >
       {/* Image */}
-      <div className="w-full h-52 max-w-48 mx-auto sm:mx-0 bg-gradient-to-bl from-[#b8860b] via-[#ffd700] to-[#b8860b] rounded-3xl shadow-lg overflow-hidden sm:order-2 blur-[1px]">
+      <div className="w-full h-52 max-w-48 mx-auto sm:mx-0 bg-gradient-to-bl from-[#b8860b] via-[#ffd700] to-[#b8860b] rounded-3xl shadow-lg overflow-hidden sm:order-2">
         <Image
           src={goldenQmark}
           alt=""
-          className="w-full h-full object-cover opacity-75"
+          className="w-full h-full object-cover opacity-60"
+          quality={100}
         />
       </div>
 
