@@ -1,9 +1,10 @@
 import { LatestEvent, UpcomingEvent } from "./types";
 // upcoming Events Images
-/* --------------------------------------------------------------- */
+import roboticsBootcamp from "@/assets/events/upcoming/robotics-bootcamp.webp";
 // Latest Events Images
-import techNights from "@/assets/events/latest/tech_nights.webp";
 import robotiva from "@/assets/events/latest/robotiva.webp";
+import antiTheHack from "@/assets/events/latest/anti_the_hack.webp";
+import codingHive from "@/assets/events/latest/coding_hive.webp";
 import promptEng from "@/assets/events/latest/prompt_eng.webp";
 import huaweiIct from "@/assets/events/latest/huawei_ict.webp";
 import uiuxEssentials from "@/assets/events/latest/uiux_essentials.webp";
@@ -12,25 +13,43 @@ import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
 // Note: Events are in chronological order with the most recent event being first in the data structure.
 
-export const upcomingEvents: UpcomingEvent[] = [];
+export const upcomingEvents: UpcomingEvent[] = [
+  {
+    category: "technical",
+    title: "Robotics Bootcamp",
+    date: "22 April - 27 April",
+    time: "3:30 PM to 7:00 PM",
+    location: "ITI, Ismailia",
+    description: `Fascinated by robotics but not sure where to start?
+    Join our Robotics Boot Camp — the perfect hands-on introduction for beginners and enthusiasts alike!
+
+    With the support of ITI - Information Technology Institute and Ismailia Engineers Syndicate, this camp will take you from zero to building real, working robots.
+
+    Whether you're a curious learner or a future engineer, this is your chance to build, code, and innovate.
+
+    🔧 What you'll do:`,
+    benefits: [
+      "Assemble your own robot",
+      "Learn Arduino basics, electronics, and programming",
+      "Work with sensors, motors, and I/O systems",
+      "Explore 3D design using SOLIDWORKS",
+    ],
+    image: { src: roboticsBootcamp, alt: "Robotics Bootcamp" },
+    RegistrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdlt5nZCyRTO3XLLl8u7lKOQguaKSvJKUaFtStk1-oIk1lmgg/viewform",
+  },
+];
+
+/* ------------------------------------------------------------------------------------ */
 
 export const latestEvents: LatestEvent[] = [
   {
     category: "technical",
-    title: "Tech Nights - Bootcamp Series",
-    date: "Mar 6 - Mar 22, 2025",
-    location: "Online",
-    description:
-      "A multi-track bootcamp series organized by IEEE, offering students a solid introduction to key tech fields including AI, Web Development, Cybersecurity, and Electronics. Each track offers hands-on sessions led by experienced mentors, aiming to equip students with practical skills and foundational knowledge in a collaborative, beginner-friendly environment.",
-    image: { src: techNights, alt: "Tech Nights" },
-  },
-  {
-    category: "technical",
     title: "Robotiva - Robotics Competition",
-    date: "Feb 28, 2024",
+    date: "Feb 28, 2025",
     location: "Creativa Hub, Ismailia",
-    description:
-      "Robotiva was a robotics competition organized by IEEE in collaboration with Creativa Hub, Ismailia. The event brought together aspiring engineers and tech enthusiasts to design, build, and compete with their own robots in a high-energy, challenge-based environment. Participants showcased their creativity, teamwork, and problem-solving skills as they tackled real-world robotics scenarios, making Robotiva a standout experience in hands-on engineering.",
+    description: `Robotiva, organized by IEEE in collaboration with Creativa Hub, Ismailia, brought together aspiring engineers and tech enthusiasts to design, build, and compete with their own robots.
+    The event offered a high-energy, challenge-driven environment where participants showcased creativity, teamwork, and problem-solving skills in real-world robotics scenarios.`,
     image: { src: robotiva, alt: "Robotiva Competition" },
     socialMediaPostLinks: {
       facebook: "https://www.facebook.com/share/r/1AXQdMwQo3",
@@ -40,11 +59,40 @@ export const latestEvents: LatestEvent[] = [
   },
   {
     category: "technical",
+    title: "Behind the screens: Anti-The Hack Session",
+    date: "Feb 26, 2025",
+    location: "Faculty of Engineering, SCU",
+    description: `Our Cybersecurity Session, led by Eng. Mohamed Fareed — Head of Cybersecurity, offered participants a solid and accessible introduction to digital security. The session covered essential topics such as malware, social engineering, and major cybersecurity threats, while also providing practical guidance on staying protected in today's connected world.`,
+    image: { src: antiTheHack, alt: "Anti The Hack Session" },
+    socialMediaPostLinks: {
+      facebook: "https://www.facebook.com/share/r/1DNcEHFW6R",
+      instagram:
+        "https://www.instagram.com/reel/DGi3u-1M8yK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    },
+  },
+  {
+    category: "technical",
+    title: "Coding Hive Hackathon",
+    date: "Feb 24, 2025",
+    location: "ITI, Ismailia",
+    description: `The Coding Hive Hackathon, organized by IEEE in collaboration with MarketAix Agency, introduced participants to the world of programming from scratch—literally! 
+    Using Scratch, participants worked in teams to design and build creative projects, learning core programming concepts step by step. With interactive challenges and a special prize, the event made learning to code both exciting and accessible.`,
+    image: { src: codingHive, alt: "Coding Hive Hackathon" },
+    socialMediaPostLinks: {
+      facebook: "https://www.facebook.com/share/p/1KVtyA8E8N",
+      instagram:
+        "https://www.instagram.com/p/DGdgboyMs8B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      linkedin:
+        "https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieee-ieeeegypt-ieeeabrscu-activity-7299816426360467456-53zf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
+    },
+  },
+  {
+    category: "technical",
     title: "Prompt Engineering Workshop",
     date: "Dec 5, 2024",
     location: "ITI, Ismailia",
-    description:
-      "The event explored the transformative power of AI in enhancing creativity. Participants discovered how AI can be used to design stunning videos, create catchy songs, generate breathtaking images, craft unique logos, develop responsive websites, and optimize LinkedIn profiles, showcasing its vast potential across various creative fields.",
+    description: `From designing stunning videos and generating original songs to building responsive websites and crafting logos, this session showcased the power of AI as a creative tool. 
+      Participants explored a wide range of AI-driven applications and left inspired by how these tools can enhance creativity across nearly every field.`,
     image: { src: promptEng, alt: "Prompt Engineering Workshop" },
     socialMediaPostLinks: {
       facebook:
@@ -80,7 +128,7 @@ export const latestEvents: LatestEvent[] = [
     date: "Sep 9, 2024",
     location: "Creativa Hub, Ismailia",
     description:
-      "The event introduced participants to the world of UI/UX design, focusing on UX Research and the importance of UX in the industry. They learned to use Figma to create their first UI design, achieving impressive results in a short amount of time.",
+      "Creativity met functionality in this hands-on UI/UX design session. Participants explored the basics of user experience design, discovered the importance of UX research, and brought ideas to life using Figma. By the end, many had created their first UI screens—walking away with both inspiration and practical skills.",
     image: { src: uiuxEssentials, alt: "UI/UX Essentials Workshop" },
     socialMediaPostLinks: {
       facebook: "https://www.facebook.com/share/p/18WKwyG9jn/",
@@ -96,7 +144,7 @@ export const latestEvents: LatestEvent[] = [
     date: "Sep 8, 2024",
     location: "Creativa Hub, Ismailia",
     description:
-      "The event focused on essential key skills and tools to help participants kickstart their careers. Attendees learned how to develop key soft skills, craft a winning CV and cover letter, optimize their LinkedIn profiles, and ace job interviews, providing them with valuable tools for career success.",
+      "Landing your dream job takes more than just a good degree. In this session, participants honed essential career-launching skills—from writing standout CVs and cover letters to acing interviews and optimizing LinkedIn profiles. Soft skills and strategic thinking were front and center, giving attendees a solid foundation for career growth.",
     image: { src: hrGuided, alt: "HR Guided Workshop" },
     socialMediaPostLinks: {
       facebook: "https://www.facebook.com/share/p/188UCBAs4e/",
@@ -112,7 +160,7 @@ export const latestEvents: LatestEvent[] = [
     date: "Aug 31, 2024",
     location: "Creativa Hub, Ismailia",
     description:
-      "The event focused on video editing, teaching participants how to transform raw material into professional-quality Reels or Shorts. Attendees learned essential editing skills, added professional touches to their videos, and elevated their editing techniques to create engaging and eye-catching content.",
+      "Creating engaging content takes more than just hitting “record.” This session took participants through the essentials of video editing, focusing on how to turn raw footage into polished Reels and Shorts. From trimming clips to adding professional flair, attendees learned how to make videos that truly stand out.",
     image: { src: makeYourReel, alt: "Make Your Reel Workshop" },
     socialMediaPostLinks: {
       facebook: "https://www.facebook.com/share/p/1B8paCCeRP/",

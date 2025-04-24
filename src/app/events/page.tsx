@@ -26,6 +26,7 @@ export default function Events() {
                   category={event.category}
                   title={event.title}
                   date={event.date}
+                  time={event.time}
                   location={event.location}
                   description={event.description}
                   benefits={event.benefits}

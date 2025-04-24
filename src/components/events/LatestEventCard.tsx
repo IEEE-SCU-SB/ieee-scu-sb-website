@@ -14,7 +14,13 @@ export default function LatestEventCard({
   socialMediaPostLinks,
 }: LatestEvent) {
   return (
-    <div className="shadow-sm rounded-xl overflow-hidden mx-auto border dark:border-slate-700/50 max-w-lg bg-slate-50/70 dark:bg-slate-800/20">
+    <div
+      className={`flex flex-col shadow-sm rounded-xl overflow-hidden mx-auto max-w-lg border ${
+        category === "non-technical"
+          ? "border-purple-muted/20 bg-purple-muted/5"
+          : "border-primary-muted/20 bg-primary-muted/5"
+      }`}
+    >
       {/* Event Image */}
       <Image
         src={image.src}
@@ -23,12 +29,13 @@ export default function LatestEventCard({
       ></Image>
 
       {/* Event Info */}
-      <div className="flex flex-col gap-4 p-4 md:p-6">
-        {/* Title, Date and Location */}
+      <div className="grow flex flex-col gap-4 p-4 md:p-6">
         <div>
+          {/* Title */}
           <h3 className="max-w-lg text-lg md:text-xl mb-2">{title}</h3>
-          <div className="flex justify-between items-baseline gap-x-4 flex-wrap">
-            <p className="font-medium tracking-wide text-sm flex gap-1 items-baseline">
+          {/* Date and Location */}
+          <div className="font-medium tracking-wide text-sm flex justify-between items-baseline gap-x-4 flex-wrap dark:text-slate-100">
+            <p className="flex gap-1 items-baseline">
               <CalendarDaysIcon
                 className={`size-3 ${
                   category === "technical"
@@ -38,7 +45,7 @@ export default function LatestEventCard({
               />
               {date}
             </p>
-            <p className="font-medium text-sm flex gap-1 items-baseline">
+            <p className="flex gap-1 items-baseline">
               <MapPinIcon
                 className={`size-3 ${
                   category === "technical"
@@ -53,11 +60,13 @@ export default function LatestEventCard({
         </div>
 
         {/* Description */}
-        <p className="text-sm dark:text-slate-200">{description}</p>
+        <p className="text-sm dark:text-slate-200 whitespace-pre-line">
+          {description}
+        </p>
 
         {/* Links of Event on Social Media */}
         {socialMediaPostLinks && (
-          <div>
+          <div className="mt-auto">
             <h4 className="text-sm font-medium mb-2">More details:</h4>
             <SocialMedia
               accent="black"
