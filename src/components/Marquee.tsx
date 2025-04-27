@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImageType } from "@/data/types";
 import { CldImage } from "next-cloudinary";
+import ImageSkeleton from "./ImageSkeleton";
 
 interface MarqueeProps {
   images: ImageType[];
@@ -10,6 +11,11 @@ interface MarqueeProps {
 
 export default function Marquee({ images, scrollDirection }: MarqueeProps) {
   const marqueeRef = useRef<HTMLDivElement>(null);
+  const [loadedImages, setLoadedImages] = useState<boolean[]>([]);
+
+  useEffect(() => {
+    setLoadedImages(new Array(images.length * 2).fill(false));
+  }, [images]);
 
   useEffect(() => {
     const marquee = marqueeRef.current;
@@ -40,6 +46,14 @@ export default function Marquee({ images, scrollDirection }: MarqueeProps) {
     };
   }, [scrollDirection]);
 
+  const handleImageLoad = (index: number) => {
+    setLoadedImages((prev) => {
+      const updated = [...prev];
+      updated[index] = true;
+      return updated;
+    });
+  };
+
   return (
     <div
       ref={marqueeRef}
@@ -47,14 +61,18 @@ export default function Marquee({ images, scrollDirection }: MarqueeProps) {
     >
       <div className="flex h-[22vh] md:h-[14em] divide-x-[24px] divide-transparent">
         {images.concat(images).map((img, index) => (
-          <div key={index} className="flex-shrink-0">
+          <div key={index} className="flex-shrink-0 relative">
+            {!loadedImages[index] && <ImageSkeleton />}
             <CldImage
               src={img.src.toString()}
               alt={img.alt}
               width={300}
               height={200}
               sizes="100%"
-              className="h-full w-auto object-cover"
+              className={`h-full w-auto object-cover transition-opacity duration-500 ${
+                loadedImages[index] ? "opacity-100" : "opacity-0"
+              }`}
+              onLoad={() => handleImageLoad(index)}
             />
           </div>
         ))}

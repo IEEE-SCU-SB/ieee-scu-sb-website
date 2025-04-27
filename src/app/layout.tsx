@@ -5,8 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+const metadataBaseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(metadataBaseUrl),
   title: "IEEE SCU SB",
   description:
     "A legacy of over 10 years, IEEE Suez Canal University Student Branch shapes future engineers through hands-on learning and professional development.",
