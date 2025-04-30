@@ -1,6 +1,6 @@
 import { LatestEvent, UpcomingEvent } from "./types";
 // upcoming Events Images
-import roboticsBootcamp from "@/assets/events/upcoming/robotics-bootcamp.webp";
+
 // Latest Events Images
 import robotiva from "@/assets/events/latest/robotiva.webp";
 import antiTheHack from "@/assets/events/latest/anti_the_hack.webp";
@@ -13,32 +13,7 @@ import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
 // Note: Events are in chronological order with the most recent event being first in the data structure.
 
-export const upcomingEvents: UpcomingEvent[] = [
-  {
-    category: "technical",
-    title: "Robotics Bootcamp",
-    date: "22 April - 27 April",
-    time: "3:30 PM to 7:00 PM",
-    location: "ITI, Ismailia",
-    description: `Fascinated by robotics but not sure where to start?
-    Join our Robotics Boot Camp — the perfect hands-on introduction for beginners and enthusiasts alike!
-
-    With the support of ITI - Information Technology Institute and Ismailia Engineers Syndicate, this camp will take you from zero to building real, working robots.
-
-    Whether you're a curious learner or a future engineer, this is your chance to build, code, and innovate.
-
-    🔧 What you'll do:`,
-    benefits: [
-      "Assemble your own robot",
-      "Learn Arduino basics, electronics, and programming",
-      "Work with sensors, motors, and I/O systems",
-      "Explore 3D design using SOLIDWORKS",
-    ],
-    image: { src: roboticsBootcamp, alt: "Robotics Bootcamp" },
-    RegistrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdlt5nZCyRTO3XLLl8u7lKOQguaKSvJKUaFtStk1-oIk1lmgg/viewform",
-  },
-];
+export const upcomingEvents: UpcomingEvent[] = [];
 
 /* ------------------------------------------------------------------------------------ */
 
