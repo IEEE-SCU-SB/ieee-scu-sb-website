@@ -11,7 +11,7 @@ export default function MarqueeSection() {
         style={{ backgroundImage: `url(${doodles.src})` }}
       ></div>
       <h2 className="text-center px-4 md:px-6 lg:px-8 xl:px-10 mb-8 lg:mb-12">
-        Capturing Moments Since 2011
+        Capturing Moments Since 2012
       </h2>
       <div className="relative grid gap-6">
         <Marquee images={topMarqueeImages} scrollDirection={"right"} />
