@@ -29,7 +29,7 @@ export default function Events() {
                   time={event.time}
                   location={event.location}
                   description={event.description}
-                  benefits={event.benefits}
+                  tags={event.tags}
                   image={event.image}
                   RegistrationLink={event.RegistrationLink}
                   socialMediaPostLinks={event.socialMediaPostLinks}

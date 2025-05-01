@@ -4,6 +4,8 @@ import Link from "next/link";
 import logoShape from "@/assets/logos/logo-shape-only.webp";
 import logoShapeWhite from "@/assets/logos/logo-shape-only-white.webp";
 import InteractiveGridPattern from "../partials/InteractiveGridPattern";
+import { BellAlertIcon } from "@heroicons/react/24/solid";
+import { upcomingEvents } from "@/data/events";
 
 interface linkProps {
   href: string;
@@ -27,7 +29,12 @@ export default function HeroSection() {
     <header className="relative min-h-svh flex flex-col justify-between lg:justify-around p-8 md:p-12 overflow-hidden">
       <nav className="relative hidden lg:flex w-full mt-8 justify-evenly gap-4 items-center max-w-6xl mx-auto backdrop-blur-[2px] z-10">
         <CustomLink href={"/"}>Home</CustomLink>
-        <CustomLink href="/events">Events</CustomLink>
+        <CustomLink href="/events">
+          {upcomingEvents && upcomingEvents.length != 0 && (
+            <BellAlertIcon className="bell inline-block size-5 text-red-600 dark:text-red-500 absolute top-[2px] -left-6" />
+          )}
+          Events
+        </CustomLink>
         <CustomLink href="/about">About Us</CustomLink>
         <Image
           src={logoShape}

@@ -13,7 +13,7 @@ export default function UpcomingEventCard({
   time,
   location,
   description,
-  benefits,
+  tags,
   image,
   RegistrationLink,
   socialMediaPostLinks,
@@ -93,11 +93,11 @@ export default function UpcomingEventCard({
           {description}
         </p>
 
-        {/* Benefits */}
-        {benefits && (
+        {/* Tags */}
+        {tags && (
           <div>
             <ul className="flex flex-wrap gap-2">
-              {benefits.map((benefit, i) => (
+              {tags.map((tag, i) => (
                 <li
                   key={i}
                   className={`text-xs py-1 px-3 rounded-md font-medium text-slate-900 dark:text-slate-200 border bg-opacity-20 border-opacity-30 ${
@@ -106,7 +106,7 @@ export default function UpcomingEventCard({
                       : "bg-purple border-purple"
                   }`}
                 >
-                  {benefit}
+                  {tag}
                 </li>
               ))}
             </ul>

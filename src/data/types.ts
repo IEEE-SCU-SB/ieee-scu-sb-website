@@ -58,7 +58,7 @@ export interface LatestEvent {
 
 export interface UpcomingEvent extends LatestEvent {
   time?: string;
-  benefits?: string[];
+  tags?: string[];
   RegistrationLink: string;
 }
 

@@ -175,3 +175,59 @@ hr {
     background-position: -200%;
   }
 }
+
+/* Bell Shake Animation */
+.bell {
+  animation: bellshake 2.2s ease-in-out infinite;
+  transform-origin: top right;
+}
+
+@keyframes bellshake {
+  0% {
+    transform: rotate(0) scale(1) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+
+  5% {
+    transform: rotate(6deg) scale(1.1) translateY(-4px);
+    filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+  }
+
+  10% {
+    transform: rotate(-6deg) scale(1.1) translateY(-4px);
+    filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+  }
+
+  15% {
+    transform: rotate(5deg) scale(1.05) translateY(-2px);
+    filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+  }
+
+  20% {
+    transform: rotate(-5deg) scale(1.05) translateY(-2px);
+    filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.4));
+  }
+
+  25% {
+    transform: rotate(3deg) scale(1.05) translateY(-2px);
+    filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.2));
+  }
+
+  30% {
+    transform: rotate(-3deg) scale(1.02) translateY(-1px);
+  }
+
+  35% {
+    transform: rotate(1deg) scale(1.01) translateY(0);
+  }
+
+  40% {
+    transform: rotate(0) scale(1) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+
+  100% {
+    transform: rotate(0) scale(1) translateY(0);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
