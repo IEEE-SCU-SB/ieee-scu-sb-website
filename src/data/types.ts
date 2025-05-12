@@ -32,11 +32,12 @@ export interface Board {
   vice?: BoardMember;
 }
 
-export interface Motm {
-  name?: string;
-  committee?: string;
+export type Motm = {
+  name: string;
+  committee: string;
   image?: ImageType;
   linkedin?: string;
+  published: boolean;
 }
 
 export interface SocialMedia {

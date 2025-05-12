@@ -1,6 +1,5 @@
 import { LatestEvent, UpcomingEvent } from "./types";
 // upcoming Events Images
-import skillItUp from "@/assets/events/upcoming/skill_it_up.webp";
 
 // Latest Events Images
 import robotiva from "@/assets/events/latest/robotiva.webp";
@@ -14,33 +13,7 @@ import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
 // Note: Events are in chronological order with the most recent event being first in the data structure.
 
-export const upcomingEvents: UpcomingEvent[] = [
-  {
-    category: "non-technical",
-    title: "Skill It Up - One week, Countless skills",
-    date: "May 3 - May 8",
-    time: "3:30 PM - 8:00 PM",
-    location: "ITI, Ismailia",
-    description: `Ready to unlock your full potential?
-    Join us for Skill It Up Week, hosted by IEEE SCU in collaboration with Enactus Ismailia — a full week of power-packed sessions designed to help you grow personally and professionally.
-
-    Each day focuses on a different, in-demand skill delivered through practical, interactive sessions. No fluff. Just value.
-
-    Spots are limited — register now and start leveling up.
-    
-    `,
-    image: { src: skillItUp, alt: "Skill It Up" },
-    tags: [
-      "Marketing",
-      "Video editing",
-      "Presentation Skills",
-      "Writing",
-      "Business",
-      "Negotiations",
-    ],
-    RegistrationLink: "https://forms.gle/zE91cKbKDg1zipf89",
-  },
-];
+export const upcomingEvents: UpcomingEvent[] = [];
 
 /* ------------------------------------------------------------------------------------ */
 

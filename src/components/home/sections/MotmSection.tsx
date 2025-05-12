@@ -14,6 +14,7 @@ export default function MotmSection() {
         committee={motm.committee}
         image={motm.image}
         linkedin={motm.linkedin}
+        published={motm.published}
       />
     </section>
   );
