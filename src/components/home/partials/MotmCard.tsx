@@ -9,13 +9,13 @@ export default function Motm({
   linkedin,
   published,
 }: MotmType) {
-  return published ? (
+  return published && name !== "" ? (
     <div
       className={`flex flex-col gap-4 sm:flex-row justify-evenly max-w-4xl mx-auto`}
     >
       {/* Image */}
       <div className="w-full h-52 max-w-48 mx-auto md:mx-0 bg-gradient-to-bl from-[#b8860b] via-[#ffd700] to-[#b8860b] rounded-3xl shadow-lg overflow-hidden sm:order-2">
-        {image && (
+        {image && image.src !== "" && (
           <Image
             src={image.src}
             alt={image.alt}
