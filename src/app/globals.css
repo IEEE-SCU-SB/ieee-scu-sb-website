@@ -82,17 +82,22 @@ h6 {
 }
 
 /* Utilities */
-.no-scrollbar {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer */
-}
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .no-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer */
+  }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none; /* For Chrome, Edge, and Safari */
-}
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Edge, and Safari */
+  }
 
-.clip {
-  clip-path: inset(0 100% 0 0);
+  .clip {
+    clip-path: inset(0 100% 0 0);
+  }
 }
 
 /* Styled Components */
@@ -229,5 +234,53 @@ hr {
   100% {
     transform: rotate(0) scale(1) translateY(0);
     filter: drop-shadow(0 0 0 transparent);
+  }
+}
+
+/* Award card animation */
+.award-card::after {
+  content: "";
+  position: absolute;
+  width: 99.5%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.15), 0 0 50px rgba(0, 140, 255, 0.05),
+    inset 0 0 15px rgba(255, 215, 0, 0.1);
+  pointer-events: none;
+}
+
+.award-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  background-image: linear-gradient(
+    128deg,
+    transparent 50%,
+    hsla(32, 100%, 70%, 0.1),
+    transparent 60%
+  );
+  animation: shiny-sweep 3.4s linear infinite;
+}
+
+@keyframes shiny-sweep {
+  0% {
+    right: -100%;
+  }
+  25% {
+    right: 100%;
+  }
+  50% {
+    right: 100%;
+  }
+  75% {
+    right: 100%;
+  }
+  100% {
+    right: 100%;
   }
 }

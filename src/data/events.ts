@@ -11,7 +11,7 @@ import uiuxEssentials from "@/assets/events/latest/uiux_essentials.webp";
 import hrGuided from "@/assets/events/latest/hr_guided.webp";
 import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
-// Note: Events are in chronological order with the most recent event being first in the data structure.
+// Note: Events are in reverse chronological order with the most recent event being first in the data structure.
 
 export const upcomingEvents: UpcomingEvent[] = [];
 

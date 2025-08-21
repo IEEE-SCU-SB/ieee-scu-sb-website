@@ -6,6 +6,7 @@ import OfficersSection from "@/components/home/sections/OfficersSection";
 import NextPageLink from "@/components/NextPageLink";
 import MotmSection from "@/components/home/sections/MotmSection";
 import MarqueeSection from "@/components/home/sections/MarqueeSection";
+import AwardsSection from "@/components/home/sections/AwardsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <BranchInfoSection />
         <MissionAndVisionSection />
         <MarqueeSection />
+        <AwardsSection />
         <OfficersSection />
         <MotmSection />
         {/* Quick Links */}

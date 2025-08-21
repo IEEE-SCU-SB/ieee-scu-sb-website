@@ -95,3 +95,9 @@ export interface Recruitment {
   status: "open" | "closed";
   RegistrationLink: string;
 }
+
+export interface Award {
+  subtitle: string;
+  title: string;
+  date: string
+}
