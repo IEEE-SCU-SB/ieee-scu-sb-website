@@ -1,5 +1,6 @@
 import { LatestEvent, UpcomingEvent } from "./types";
 // upcoming Events Images
+import techne from "@/assets/events/upcoming/techne.webp";
 
 // Latest Events Images
 import robotiva from "@/assets/events/latest/robotiva.webp";
@@ -13,7 +14,27 @@ import makeYourReel from "@/assets/events/latest/make_your_reel.webp";
 
 // Note: Events are in reverse chronological order with the most recent event being first in the data structure.
 
-export const upcomingEvents: UpcomingEvent[] = [];
+export const upcomingEvents: UpcomingEvent[] = [
+  {
+    category: "technical",
+    title: "Techne Summit 2025",
+    date: "29 Sep - 6 Oct",
+    location: "Cairo / Alexandria",
+    description: `We're thrilled to announce our collaboration with Techne Summit 2025! 
+    Mark your calendars for Oct 29th to 6th, as we bring you an array of captivating content across multiple industry-focused tracks.
+    
+    Don't wait - apply now and secure your ticket!`,
+    image: { src: techne, alt: "Techne Summit 2025" },
+    socialMediaPostLinks: {
+      facebook: "https://www.facebook.com/share/v/16ZRH9D9Rc/?mibextid=wwXIfr",
+      instagram:
+        "https://www.instagram.com/reel/DMVuSBASyE7/?igsh=N3ZsODZpZmJldmd6",
+      linkedin:
+        "https://www.linkedin.com/posts/techne.me_eiw2025-egyptinnovationweek-techne-activity-7352755860340666368-QUdg?utm_source=share&utm_medium=member_ios&rcm=ACoAACxVDNQBltu1I-rZA_FRIrs1fxoYpNlKvVU",
+    },
+    RegistrationLink: "https://technesummit.com/2025#ticketsSection",
+  },
+];
 
 /* ------------------------------------------------------------------------------------ */
 
