@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@heroicons/react':
-        specifier: ^2.1.5
+        specifier: ^2.2.0
         version: 2.2.0(react@19.1.1)
       '@vercel/analytics':
         specifier: ^1.5.0
@@ -21,7 +21,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       next:
-        specifier: ^15.1.6
+        specifier: ^15.5.4
         version: 15.5.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       next-cloudinary:
         specifier: ^6.16.0
@@ -30,41 +30,41 @@ importers:
         specifier: ^4.2.3
         version: 4.2.3(next@15.5.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1))
       react:
-        specifier: ^19.0.0
+        specifier: ^19.1.1
         version: 19.1.1
       react-dom:
-        specifier: ^19.0.0
+        specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
       tailwind-merge:
-        specifier: ^3.0.1
+        specifier: ^3.3.1
         version: 3.3.1
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.17)
     devDependencies:
       '@types/node':
-        specifier: ^20
+        specifier: ^20.19.17
         version: 20.19.17
       '@types/react':
-        specifier: ^18
+        specifier: ^18.3.24
         version: 18.3.24
       '@types/react-dom':
-        specifier: ^18
+        specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.24)
       eslint:
-        specifier: ^8
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-config-next:
-        specifier: ^15.1.6
+        specifier: ^15.5.4
         version: 15.5.4(eslint@8.57.1)(typescript@5.9.2)
       postcss:
-        specifier: ^8
+        specifier: ^8.5.6
         version: 8.5.6
       tailwindcss:
-        specifier: ^3.4.1
+        specifier: ^3.4.17
         version: 3.4.17
       typescript:
-        specifier: ^5
+        specifier: ^5.9.2
         version: 5.9.2
 
 packages:
