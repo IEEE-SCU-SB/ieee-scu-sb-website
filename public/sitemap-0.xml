@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://ieeescu.org/opengraph-image.png</loc><lastmod>2025-09-28T22:07:23.980Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees</loc><lastmod>2025-09-28T22:07:23.984Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/about</loc><lastmod>2025-09-28T22:07:23.984Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/events</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/join</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/contact</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/ai</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/cyber-security</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/electronics</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/event-coordination</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/hr</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/media</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/pr</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/robotics</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://ieeescu.org/committees/web-development</loc><lastmod>2025-09-28T22:07:23.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/opengraph-image.png</loc><lastmod>2025-09-30T12:33:04.100Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/contact</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/developers</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/join</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/about</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/ai</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/cyber-security</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/electronics</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/event-coordination</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/hr</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/media</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/pr</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/robotics</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/committees/web-development</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org/events</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://ieeescu.org</loc><lastmod>2025-09-30T12:33:04.101Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
