@@ -25,9 +25,9 @@ export interface TechStack {
 	description: string;
 }
 
-// Import developer images - for now using placeholder images from the existing assets
+// Import developer images
 import webmaster1 from "@/assets/developers/webmaster1.webp";
-import webmaster2 from "@/assets/highboard/webmaster.webp";
+import webmaster2 from "@/assets/developers/webmaster2.webp";
 
 // Import technology stack icons
 import nextIcon from "@/assets/stack/next.svg";

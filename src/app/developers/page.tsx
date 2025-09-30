@@ -1,9 +1,28 @@
-"use client";
+import type {Metadata} from "next";
 import Image from "next/image";
 import Link from "next/link";
+
 import Header from "@/components/Header";
-import {developers, techStack} from "@/data/developers";
+import { developers, techStack } from "@/data/developers";
+
 import {EnvelopeIcon} from "@heroicons/react/24/solid";
+
+// Static Site Generation 
+export const dynamic = "force-static";
+export const revalidate = false;
+
+// Metadata for SEO
+export const metadata: Metadata = {
+	title: "Meet Our Webmasters | IEEE SCU SB",
+	description:
+		"Meet the talented webmasters behind the IEEE SCU Student Branch website. Learn about their achievements, contributions, and the technology stack powering our digital presence.",
+	keywords: ["IEEE SCU webmasters", "web development team", "student branch developers", "website creators"],
+	openGraph: {
+		title: "Meet Our Webmasters | IEEE SCU SB",
+		description: "The talented minds behind our award-winning website. Our webmasters combine technical expertise with creative vision.",
+		type: "website",
+	},
+};
 
 const LinkedInIcon = ({className}: {className?: string}) => (
 	<svg className={className} fill='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
@@ -69,8 +88,8 @@ const DeveloperCard = ({
 							alt={image.alt}
 							fill
 							className='object-cover object-center hover:scale-105 transition-transform duration-300'
-							sizes='(max-width: 640px) 96px, 128px'
-							
+							sizes='128px'
+							priority={true}
 						/>
 					</div>
 
@@ -112,8 +131,8 @@ const DeveloperCard = ({
 								fill
 								className='object-cover object-center hover:scale-105 transition-transform duration-300'
 								sizes='(max-width: 1024px) 176px, 224px'
-
-								priority
+								priority={false}
+								loading='lazy'
 							/>
 						</div>
 					</div>
@@ -216,7 +235,15 @@ export default function Developers() {
 								className='flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 sm:py-2 bg-white dark:bg-slate-700 border border-slate-300 dark:border-border text-foreground rounded-lg text-xs sm:text-sm font-medium hover:shadow-md transition-shadow duration-200'
 								title={tech.description}
 							>
-								<Image src={tech.icon} alt={`${tech.name} icon`} width={16} height={16} className='w-3 h-3 sm:w-4 sm:h-4' />
+								<Image
+									src={tech.icon}
+									alt={`${tech.name} icon`}
+									width={16}
+									height={16}
+									className='w-3 h-3 sm:w-4 sm:h-4'
+									loading='lazy'
+									decoding='async'
+								/>
 								<span className='whitespace-nowrap'>{tech.name}</span>
 							</div>
 						))}
