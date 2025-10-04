@@ -1,6 +1,6 @@
-import { Recruitment } from "./types";
+import {Recruitment} from "./types";
 
 export const recruitment: Recruitment = {
-  status: "closed",
-  RegistrationLink: "#",
+	status: "open",
+	RegistrationLink: "https://forms.gle/1UYcfm2xyd7xhZ3YA",
 };
