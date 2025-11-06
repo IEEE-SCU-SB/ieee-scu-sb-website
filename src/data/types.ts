@@ -100,4 +100,5 @@ export interface Award {
 	subtitle: string;
 	title: string;
 	date: string;
+	place?: string; // Optional place string to display (e.g. "1st Place", "3rd Place").
 }

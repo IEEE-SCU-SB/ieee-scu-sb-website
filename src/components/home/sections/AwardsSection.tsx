@@ -17,6 +17,7 @@ export default function AwardsSection() {
             title={award.title}
             subtitle={award.subtitle}
             date={award.date}
+            place={award.place}
           />
         ))}
       </div>
