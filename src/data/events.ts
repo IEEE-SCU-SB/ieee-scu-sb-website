@@ -4,12 +4,58 @@ export const upcomingEvents: UpcomingEvent[] = [];
 
 export const latestEvents: LatestEvent[] = [
 	{
+		category: "non-technical",
+		title: "Orientation Day 2025",
+		date: "Oct 29, 2025",
+		location: "Creativa Hub, Ismailia",
+		description:
+			"IEEE Orientation Day was a vibrant and engaging kickoff that opened a new season with energy and excitement. The event brought together new and returning members in a welcoming atmosphere designed to strengthen connections and introduce everyone to the community spirit of IEEE. Throughout the day, participants enjoyed team activities, interactive games, and plenty of opportunities to network.",
+		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763126724/orientation_2025_jqigfx.webp", alt: "Orientation Day 2025"},
+		socialMediaPostLinks: {
+			facebook:
+				"https://m.facebook.com/story.php?story_fbid=pfbid02XJ66Te4qbpNU9CE3ML72wME2zQQA4X29tZp4c6T2DtSJbqzR4zHYPTwbdD8caEGNl&id=100064157166643&mibextid=wwXIfr",
+			instagram: "https://www.instagram.com/reel/DQ4sP2CjMEa/?igsh=ZGw0YXRidXpmdnJ3",
+			linkedin:
+				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_orientationday-newseason-creativahub-activity-7388653061898055680-HtAd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEB4xzkBAtcmu7T_ZGmJYYVma6WUQHDoPHA",
+			tiktok: "https://vt.tiktok.com/ZSybY7Vjk/",
+		},
+	},
+	{
+		category: "non-technical",
+		title: "Skill it up",
+		date: "Apr 29, 2024",
+		location: "Creativa & ITI",
+		description:
+			"Skill It Up was a practical, hands-on event at Creativa Hub and ITI that empowered students and early-career professionals with essential workplace and creative skills. Sessions covered Marketing & Video Editing, Voice & Body Language for confident communication, Professional Writing for effective emails and reports, and Business Negotiation techniques.",
+		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763126697/skill_it_up_v1hiwz.webp", alt: "Skill it up"},
+		socialMediaPostLinks: {
+			facebook: "https://www.facebook.com/share/p/1CbVEwAUoF/?mibextid=wwXIfr",
+			instagram: "https://www.instagram.com/p/DJCgvHEMCUY/?igsh=MWNzenVqdHo1OG51Mw==",
+			linkedin:
+				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_skills-ieeeabrscuabrsb-ieee-activity-7323038764308545536-SkKL?utm_medium=ios_app&rcm=ACoAAE13QrAB2ySkg-lbv8oyADDua8ExsmWbo_s&utm_source=social_share_send&utm_campaign=copy_link",
+		},
+	},
+	{
+		category: "technical",
+		title: "Tech Nights",
+		date: "Mar 1, 2024",
+		location: "online",
+		description:
+			"Tech Nights is an online learning series that brings together learners and tech enthusiasts to explore modern technologies through focused sessions. Topics included Artificial Intelligence, Cybersecurity, Front- and Back-end Web Development, and Electronics. The series provided practical insights, demos, and guidance to help attendees stay current in today's fast-paced tech landscape.",
+		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763126697/tech_nights_ofpqrp.webp", alt: "Tech Nights"},
+		socialMediaPostLinks: {
+			facebook: "https://www.facebook.com/share/p/1YwUQkmgsK/?mibextid=wwXIfr",
+			instagram: "https://www.instagram.com/p/DGq1HV-sPHc/?igsh=MXF3aTB0eTF1MWF3eQ==",
+			linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7301691438315036672",
+		},
+	},
+	{
 		category: "technical",
 		title: "Robotiva - Robotics Competition",
 		date: "Feb 28, 2025",
 		location: "Creativa Hub, Ismailia",
-		description: `Robotiva, organized by IEEE in collaboration with Creativa Hub, Ismailia, brought together aspiring engineers and tech enthusiasts to design, build, and compete with their own robots.
-    The event offered a high-energy, challenge-driven environment where participants showcased creativity, teamwork, and problem-solving skills in real-world robotics scenarios.`,
+		description:
+			"Robotiva, organized by IEEE in collaboration with Creativa Hub, Ismailia, brought together aspiring engineers and tech enthusiasts to design, build, and compete with their own robots.The event offered a high-energy, challenge-driven environment where participants showcased creativity, teamwork, and problem-solving skills in real-world robotics scenarios.",
 		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109238/robotiva_asq0xv.webp", alt: "Robotiva Competition"},
 		socialMediaPostLinks: {
 			facebook: "https://www.facebook.com/share/r/1AXQdMwQo3",
@@ -21,7 +67,8 @@ export const latestEvents: LatestEvent[] = [
 		title: "Behind the screens: Anti-The Hack Session",
 		date: "Feb 26, 2025",
 		location: "Faculty of Engineering, SCU",
-		description: `Our Cybersecurity Session, led by Eng. Mohamed Fareed — Head of Cybersecurity, offered participants a solid and accessible introduction to digital security. The session covered essential topics such as malware, social engineering, and major cybersecurity threats, while also providing practical guidance on staying protected in today's connected world.`,
+		description:
+			"Our Cybersecurity Session, led by Eng. Mohamed Fareed — Head of Cybersecurity, offered participants a solid and accessible introduction to digital security. The session covered essential topics such as malware, social engineering, and major cybersecurity threats, while also providing practical guidance on staying protected in today's connected world.",
 		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109235/anti_the_hack_loi2pu.webp", alt: "Anti The Hack Session"},
 		socialMediaPostLinks: {
 			facebook: "https://www.facebook.com/share/r/1DNcEHFW6R",
@@ -33,8 +80,8 @@ export const latestEvents: LatestEvent[] = [
 		title: "Coding Hive Hackathon",
 		date: "Feb 24, 2025",
 		location: "ITI, Ismailia",
-		description: `The Coding Hive Hackathon, organized by IEEE in collaboration with MarketAix Agency, introduced participants to the world of programming from scratch—literally! 
-    Using Scratch, participants worked in teams to design and build creative projects, learning core programming concepts step by step. With interactive challenges and a special prize, the event made learning to code both exciting and accessible.`,
+		description:
+			"The Coding Hive Hackathon, organized by IEEE in collaboration with MarketAix Agency, introduced participants to the world of programming from scratch—literally! Using Scratch, participants worked in teams to design and build creative projects, learning core programming concepts step by step. With interactive challenges and a special prize, the event made learning to code both exciting and accessible.",
 		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109236/coding_hive_nhh1hu.webp", alt: "Coding Hive Hackathon"},
 		socialMediaPostLinks: {
 			facebook: "https://www.facebook.com/share/p/1KVtyA8E8N",
@@ -48,8 +95,8 @@ export const latestEvents: LatestEvent[] = [
 		title: "Prompt Engineering Workshop",
 		date: "Dec 5, 2024",
 		location: "ITI, Ismailia",
-		description: `From designing stunning videos and generating original songs to building responsive websites and crafting logos, this session showcased the power of AI as a creative tool. 
-      Participants explored a wide range of AI-driven applications and left inspired by how these tools can enhance creativity across nearly every field.`,
+		description:
+			"From designing stunning videos and generating original songs to building responsive websites and crafting logos, this session showcased the power of AI as a creative tool. Participants explored a wide range of AI-driven applications and left inspired by how these tools can enhance creativity across nearly every field.",
 		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109238/prompt_eng_pqik0f.webp", alt: "Prompt Engineering Workshop"},
 		socialMediaPostLinks: {
 			facebook: "https://www.facebook.com/100064157166643/posts/954951156653448/?mibextid=rS40aB7S9Ucbxw6v",
