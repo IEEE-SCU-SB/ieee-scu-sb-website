@@ -1,4 +1,4 @@
-import CloudinaryEventImage from "@/components/events/CloudinaryEventImage";
+import CloudinaryImage from "@/components/CloudinaryImage";
 import type {LatestEvent} from "@/data/types";
 import SocialMedia from "../SocialMedia";
 import {CalendarDaysIcon} from "@heroicons/react/24/solid";
@@ -12,7 +12,7 @@ export default function LatestEventCard({category, title, date, location, descri
 			}`}
 		>
 			{/* Event Image */}
-			<CloudinaryEventImage
+			<CloudinaryImage
 				src={image.src?.toString()}
 				alt={image.alt}
 				width={400}
