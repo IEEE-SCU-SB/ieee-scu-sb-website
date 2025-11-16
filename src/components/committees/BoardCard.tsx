@@ -1,6 +1,6 @@
 import {BoardMember} from "@/data/types";
 import {EnvelopeIcon} from "@heroicons/react/24/solid";
-import Image from "next/image";
+import CloudinaryImage from "@/components/CloudinaryImage";
 
 interface BoardCardProps extends BoardMember {
 	category: string;
@@ -9,15 +9,19 @@ interface BoardCardProps extends BoardMember {
 export default function BoardCard({category, name, position, bio, linkedin, mail, image}: BoardCardProps) {
 	return (
 		<div className='flex flex-col gap-y-4 gap-x-12 sm:flex-row items-center justify-between w-full max-w-4xl shadow-lg p-6 rounded-2xl mx-auto border border-border'>
-			{/* Image */}
 			<div
-				className={`w-full max-w-44 aspect-square mx-auto md:mx-0 rounded-full shadow-lg overflow-hidden sm:order-2 ${
+				className={`w-full max-w-44 aspect-square mx-auto md:mx-0 rounded-full shadow-lg overflow-hidden relative sm:order-2 ${
 					category == "non-technical" ? "bg-purple" : "bg-primary"
 				}`}
 			>
-				{image.src && <Image src={image.src} alt={image.alt} className='pt-4 object-cover object-top' />}
+				<CloudinaryImage
+					src={image.src.toString()}
+					alt={image.alt}
+					width={240}
+					height={240}
+					imgClassName={`h-full w-full pt-4 object-cover transition-opacity duration-500`}
+				/>
 			</div>
-
 			{/* Profile */}
 			<div className='flex flex-col gap-4 items-center text-center sm:items-start sm:text-left'>
 				<div className='capitalize'>

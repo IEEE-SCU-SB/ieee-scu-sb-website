@@ -1,27 +1,5 @@
 import {Board} from "./types";
 
-// Board Photos - Head
-import techHeadImg from "@/assets/board/head/tech.webp";
-import aiHeadImg from "@/assets/board/head/ai.webp";
-import cyberHeadImg from "@/assets/board/head/cyber.webp";
-import flutterHeadImg from "@/assets/board/head/flutter.webp";
-import webHeadImg from "@/assets/board/head/web.webp";
-import roboticsHeadImg from "@/assets/board/head/robotics.webp";
-import cloudHeadImg from "@/assets/board/head/cloud.webp";
-
-import prHeadImg from "@/assets/board/head/pr.webp";
-import eventHeadImg from "@/assets/board/head/event.webp";
-import hrHeadImg from "@/assets/board/head/hr.webp";
-import mediaHeadImg from "@/assets/board/head/media.webp";
-import entrepreneurshipHeadImg from "@/assets/board/head/entrepreneurship.webp";
-
-// Board Photos - Vice
-import hrViceImg from "@/assets/board/vice/hr1.webp";
-import roboticsViceImg from "@/assets/board/vice/robotics.webp";
-import aiViceImg from "@/assets/board/vice/ai.webp";
-import hrVice2Img from "@/assets/board/vice/hr2.webp";
-import mediaViceImg from "@/assets/board/vice/media.webp";
-
 export const board: Board[] = [
 	{
 		id: "robotics",
@@ -31,7 +9,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/eslam-m-shehata-250243315",
 			mail: "eslam.m.shehata.21@gmail.com",
 			image: {
-				src: roboticsHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109068/robotics_zugb0t.webp",
 				alt: "Head of Robotics Committee",
 			},
 		},
@@ -41,7 +19,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/noha-nakeeb-b89b9a242",
 			mail: "nohanakeeb@gmail.com",
 			image: {
-				src: roboticsViceImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109179/robotics_nskjs5.webp",
 				alt: "Vice of Robotics Committee",
 			},
 		},
@@ -54,7 +32,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/rana-nader",
 			mail: "rana.nader.badran@gmail.com",
 			image: {
-				src: aiHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109080/ai_x7efut.webp",
 				alt: "Head of AI Committee",
 			},
 		},
@@ -64,7 +42,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/salma-adel-7645922a3",
 			mail: "salma.adel2015maaly@gmail.com",
 			image: {
-				src: aiViceImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109172/ai_xjsmnf.webp",
 				alt: "Vice of AI Committee",
 			},
 		},
@@ -77,7 +55,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/ziadelsaid",
 			mail: "ziadelsaidibrahem@gmail.com",
 			image: {
-				src: webHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109099/web_n4mxaq.webp",
 				alt: "Head of Web Committee",
 			},
 		},
@@ -90,7 +68,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/mohamed-sarhan-9790a6254",
 			mail: "mhmmsrhan@gmail.com",
 			image: {
-				src: cyberHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109034/cyber_s70t3o.webp",
 				alt: "Head of Cyber Security Committee",
 			},
 		},
@@ -103,7 +81,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/asma-onsy-5a26072a0",
 			mail: "asmaonsy2005@gmail.com",
 			image: {
-				src: hrHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109046/hr_m2kfko.webp",
 				alt: "Head of HR Committee",
 			},
 		},
@@ -114,7 +92,7 @@ export const board: Board[] = [
 				linkedin: "https://www.linkedin.com/in/alaa-ahmed-soltan-2a3130384",
 				mail: "alaaahmedsoltan@gmail.com",
 				image: {
-					src: hrViceImg,
+					src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109180/hr1_ruhrsa.webp",
 					alt: "Vice of HR Committee",
 				},
 			},
@@ -124,7 +102,7 @@ export const board: Board[] = [
 				linkedin: "",
 				mail: "shskebw45@gmail.com",
 				image: {
-					src: hrVice2Img,
+					src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109195/hr2_rbq9qh.webp",
 					alt: "Vice of HR Committee",
 				},
 			},
@@ -138,7 +116,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/abdelrhman-asaad-negeda",
 			mail: "body.negeda@gmail.com",
 			image: {
-				src: mediaHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109080/media_ng86zo.webp",
 				alt: "Head of Media Committee",
 			},
 		},
@@ -148,7 +126,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/miral-milad-23374a350",
 			mail: "miralmido5200@gmail.com",
 			image: {
-				src: mediaViceImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109180/media_cwyxqi.webp",
 				alt: "Vice of Media Committee",
 			},
 		},
@@ -161,7 +139,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/mohamed-sayed-395a71331",
 			mail: "mohamedsayed.scurt@gmail.com",
 			image: {
-				src: eventHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109046/event_nvgtzu.webp",
 				alt: "Head of Event Coordination Committee",
 			},
 		},
@@ -174,7 +152,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/mohamed-raafat-22b3a02a2",
 			mail: "moehamada732@gmail.com",
 			image: {
-				src: prHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109089/pr_wzzfjo.webp",
 				alt: "Head of PR Committee",
 			},
 		},
@@ -187,7 +165,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/hana-gamal-abuelyazeed",
 			mail: "hanagamal989@gmail.com",
 			image: {
-				src: entrepreneurshipHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1741113948/entrepreneurship_nfan5i.webp",
 				alt: "Head of Entrepreneurship Committee",
 			},
 		},
@@ -200,7 +178,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/amr-elabbasy-392293318",
 			mail: "amrelabbasy2003@gmail.com",
 			image: {
-				src: cloudHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109107/cloud_zagxlw.webp",
 				alt: "Head of DevOps and Cloud Committee",
 			},
 		},
@@ -213,7 +191,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/ahmed7ghanem",
 			mail: "ahmedghanem.3777@gmail.com",
 			image: {
-				src: techHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109085/tech_q5kzia.webp",
 				alt: "Head of Technical Committee",
 			},
 		},
@@ -226,7 +204,7 @@ export const board: Board[] = [
 			linkedin: "https://www.linkedin.com/in/rahma-ibrahim-b91a2b236",
 			mail: "Rahmaibrahim315@gmail.com",
 			image: {
-				src: flutterHeadImg,
+				src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763109054/flutter_rr7hze.webp",
 				alt: "Head of Flutter Committee",
 			},
 		},
