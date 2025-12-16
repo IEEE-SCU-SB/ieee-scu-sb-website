@@ -34,7 +34,10 @@ export interface Board {
 
 export type Motm = {
 	name: string;
-	committee: string;
+	committee: {
+		name: string;
+		link:string
+	};
 	image?: ImageType;
 	linkedin?: string;
 	published: boolean;
@@ -55,6 +58,11 @@ export interface LatestEvent {
 	description: string;
 	image: ImageType;
 	socialMediaPostLinks?: SocialMedia;
+	megaEvent?:
+		| {
+				nestedPath?: string;
+		  }
+		| false;
 }
 
 export interface UpcomingEvent extends LatestEvent {
