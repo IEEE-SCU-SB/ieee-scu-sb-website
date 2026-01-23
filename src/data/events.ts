@@ -4,6 +4,41 @@ export const upcomingEvents: UpcomingEvent[] = [];
 
 export const latestEvents: LatestEvent[] = [
 	{
+		category: "technical",
+		title: "TechXplore",
+		date: "Nov, Dec 2025",
+		location: "Creativa & ITI",
+		description:
+			"TechXplore is IEEE’s flagship bootcamp series offering hands-on tracks in AI & Machine Learning, Robotics, and Front-End Web Development, enabling participants to build practical skills and confidently launch their tech journey.",
+		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1765382648/web_Explor_nxuisv.webp", alt: "TechXplore event image"},
+		socialMediaPostLinks: {
+			facebook: "https://www.facebook.com/share/p/1BPsGc3VMn/?mibextid=wwXIfr",
+			instagram: "https://www.instagram.com/p/DQ-JENojF2P/?igsh=bXA5ZHg1cDZqb2U1",
+			linkedin:
+				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_techxplore-ieee-ieeescusb-activity-7394481317310083073-X7wn",
+			tiktok: "",
+		},
+		megaEvent: {id: "techxplore", nestedPath: "/techxplore"},
+	},
+	{
+		category: "non-technical",
+		title: "IEEE Club",
+		date: "2025 - 2026 Season ",
+		location: "Creativa Hub, Ismailia",
+		description:
+			"The IEEE Club is a weekly recurring internal gathering designed to strengthen collaboration and connection across all committees within our branch. Each week, one or more committees take the lead in organizing an engaging offline session where members can learn about the roles, goals, and ongoing projects of other committees.",
+		image: {src: "https://res.cloudinary.com/ieeescusb/image/upload/v1765382647/Untitled-1_kpbvoj.webp", alt: "IEEE Club event image"},
+		// socialMediaPostLinks: {
+		// 	facebook:
+		// 		"",
+		// 	instagram: "",
+		// 	linkedin:
+		// 		"",
+		// 	tiktok: "",
+		// },
+		megaEvent: {id: "ieee-club", nestedPath: "/ieee-club"},
+	},
+	{
 		category: "non-technical",
 		title: "Orientation Day 2025",
 		date: "Oct 29, 2025",
@@ -19,6 +54,7 @@ export const latestEvents: LatestEvent[] = [
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_orientationday-newseason-creativahub-activity-7388653061898055680-HtAd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEB4xzkBAtcmu7T_ZGmJYYVma6WUQHDoPHA",
 			tiktok: "https://vt.tiktok.com/ZSybY7Vjk/",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "non-technical",
@@ -34,6 +70,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_skills-ieeeabrscuabrsb-ieee-activity-7323038764308545536-SkKL?utm_medium=ios_app&rcm=ACoAAE13QrAB2ySkg-lbv8oyADDua8ExsmWbo_s&utm_source=social_share_send&utm_campaign=copy_link",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "technical",
@@ -48,6 +85,7 @@ export const latestEvents: LatestEvent[] = [
 			instagram: "https://www.instagram.com/p/DGq1HV-sPHc/?igsh=MXF3aTB0eTF1MWF3eQ==",
 			linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7301691438315036672",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "technical",
@@ -61,6 +99,7 @@ export const latestEvents: LatestEvent[] = [
 			facebook: "https://www.facebook.com/share/r/1AXQdMwQo3",
 			instagram: "https://www.instagram.com/reel/DGncONGMjJ-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "technical",
@@ -74,6 +113,7 @@ export const latestEvents: LatestEvent[] = [
 			facebook: "https://www.facebook.com/share/r/1DNcEHFW6R",
 			instagram: "https://www.instagram.com/reel/DGi3u-1M8yK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "technical",
@@ -89,6 +129,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieee-ieeeegypt-ieeeabrscu-activity-7299816426360467456-53zf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "technical",
@@ -104,6 +145,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieee-ieeeegypt-ieeeabrscu-activity-7270534687524110336-8jlu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "non-technical",
@@ -122,6 +164,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_huaweiacademy-ictcompetition-facultyofengineering-activity-7265453940954058752-Lrx7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "non-technical",
@@ -137,6 +180,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieeeabrscuabrsb-ui-uiabrux-activity-7241146491409428480-5OBj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "non-technical",
@@ -152,6 +196,7 @@ export const latestEvents: LatestEvent[] = [
 			linkedin:
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieeeabrscuabrsb-hr-hrabrguided-activity-7240043909492408320-1xhf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 		},
+		megaEvent: false,
 	},
 	{
 		category: "non-technical",
@@ -167,5 +212,6 @@ export const latestEvents: LatestEvent[] = [
 				"https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_ieeeabrscuabrsb-media-videoediting-activity-7237527159597105152-LpW0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD14GpMBogyIDtW3oqGLTmdFUzCtFD7ZU54",
 			instagram: "https://www.instagram.com/p/C_i6zaEsVfU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
 		},
+		megaEvent: false,
 	},
 ];

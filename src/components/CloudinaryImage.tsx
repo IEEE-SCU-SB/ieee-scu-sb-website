@@ -26,6 +26,7 @@ export default function CloudinaryImage({src, alt, width = 400, height = 225, si
 			{!loaded && <ImageSkeleton />}
 
 			<CldImage
+				key={src}
 				src={src}
 				alt={alt}
 				width={width}

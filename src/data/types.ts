@@ -36,7 +36,7 @@ export type Motm = {
 	name: string;
 	committee: {
 		name: string;
-		link:string
+		link: string;
 	};
 	image?: ImageType;
 	linkedin?: string;
@@ -58,9 +58,10 @@ export interface LatestEvent {
 	description: string;
 	image: ImageType;
 	socialMediaPostLinks?: SocialMedia;
-	megaEvent?:
+	megaEvent:
 		| {
-				nestedPath?: string;
+				id: string;
+				nestedPath: string;
 		  }
 		| false;
 }
