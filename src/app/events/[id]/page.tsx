@@ -49,10 +49,13 @@ export async function generateMetadata({params}: PageProps) {
 	};
 }
 
-export default async function MegaEventPage({params}: PageProps) {
+export default async function Page({params}: PageProps) {
 	const {id} = await params;
 	const event = latestEvents.find((e) => e.megaEvent !== false && e.megaEvent.id === id);
-	const subEvents = megaEventSubEvents[id] || [];
+	const megaEventData = megaEventSubEvents[id];
+	const subEvents = megaEventData.subEvents;
+	const detailedDescription = megaEventData.description;
+
 	if (!event) {
 		notFound();
 	}
@@ -71,7 +74,7 @@ export default async function MegaEventPage({params}: PageProps) {
 					</p>
 				</div>
 			</Header>
-			<main className='pt-2 lg:pt-16'>
+			<main className='pt-2 gap-0 lg:pt-16'>
 				<section className='grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto'>
 					<div className='max-lg:flex flex-col items-center'>
 						<CloudinaryImage
@@ -79,7 +82,7 @@ export default async function MegaEventPage({params}: PageProps) {
 							alt={event.image.alt}
 							width={500}
 							height={270}
-							className='rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-400/30'
+							className='rounded-xl overflow-hidden shadow-2xl dark:border dark:border-blue-400/50 border-blue-400 border-[2px]'
 							imgClassName='w-full h-auto object-cover'
 						/>
 						{event.socialMediaPostLinks && (
@@ -95,7 +98,7 @@ export default async function MegaEventPage({params}: PageProps) {
 							</div>
 						)}
 					</div>
-					<p className=' place-self-start md:text-center   text-sm md:text-base lg:text-sm lg:text-start whitespace-pre-line'>{event.description}</p>
+					<p className='place-self-start md:text-center text-sm md:text-base lg:text-sm lg:text-start whitespace-pre-line'>{detailedDescription}</p>
 				</section>
 				<MegaEventGallery subEvents={subEvents} />
 			</main>
