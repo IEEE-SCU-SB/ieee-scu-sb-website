@@ -27,24 +27,3 @@ export const bottomMarqueeImages: ImageType[] = [
   { src: "https://res.cloudinary.com/ieeescusb/image/upload/v1741113953/19_fijujz.webp", alt: alt },
   { src: "https://res.cloudinary.com/ieeescusb/image/upload/v1741113953/20_ze3qlk.webp", alt: alt },
 ];
-
-/**
- * changes made 
- * removed
-  v1763320312/23_g4wqwz.webp
-  v1741113947/3_fvfezn.webp
-  v1741113947/4_gtvvcx.webp
-  v1741113948/9_gejzkj.webp
-  v1741113951/10_klpzk9.webp
-  v1741113952/11_wxhtua.webp
-  v1741113950/15_iywpu0.webp
-
- *  added
-  v1763320302/21_bbaxvn.webp
-  v1763320307/22_qqaebr.webp 
-  v1763320312/23_g4wqwz.webp
-  v1763320316/24_vevvgz.webp
-  v1763320312/25_weqqvv.webp
-  v1763320307/26_bkcaab.webp
-  v1763320310/27_ltnyuo.webp 
- */
