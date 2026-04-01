@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "@/components/Header";
-import { developers, techStack } from "@/data/developers";
+import Header from "@/components/layout/Header";
+import { developers, techStack } from "@/features/developers/data/developers";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 // Static Site Generation

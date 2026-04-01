@@ -1,11 +1,11 @@
-import AwardsSection from "@/components/home/sections/AwardsSection";
-import BranchInfoSection from "@/components/home/sections/BranchInfoSection";
-import HeroSection from "@/components/home/sections/HeroSection";
-import IntroSection from "@/components/home/sections/IntroSection";
-import MarqueeSection from "@/components/home/sections/MarqueeSection";
-import MissionAndVisionSection from "@/components/home/sections/MissionAndVisionSection";
-import MotmSection from "@/components/home/sections/MotmSection";
-import OfficersSection from "@/components/home/sections/OfficersSection";
+import AwardsSection from "@/features/home/components/sections/AwardsSection";
+import BranchInfoSection from "@/features/home/components/sections/BranchInfoSection";
+import HeroSection from "@/features/home/components/sections/HeroSection";
+import IntroSection from "@/features/home/components/sections/IntroSection";
+import MarqueeSection from "@/features/home/components/sections/MarqueeSection";
+import MissionAndVisionSection from "@/features/home/components/sections/MissionAndVisionSection";
+import MotmSection from "@/features/home/components/sections/MotmSection";
+import OfficersSection from "@/features/home/components/sections/OfficersSection";
 import NextPageLink from "@/components/NextPageLink";
 
 export default function Home() {

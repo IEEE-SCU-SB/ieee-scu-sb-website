@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import CommitteeCard from "@/components/committees/CommitteeCard";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
-import { committees } from "@/data/committees";
+import CommitteeCard from "@/features/committees/components/CommitteeCard";
+import { committees } from "@/features/committees/data/committees";
 
 export default function Committees() {
   const [selectedCategory, setSelectedCategory] = useState<"all" | "technical" | "non-technical">(

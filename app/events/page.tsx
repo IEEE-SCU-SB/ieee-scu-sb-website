@@ -1,11 +1,11 @@
 import Image from "next/image";
-import LatestEventCard from "@/components/events/LatestEventCard";
-import UpcomingEventCard from "@/components/events/UpcomingEventCard";
-import Header from "@/components/Header";
+import LatestEventCard from "@/features/events/components/LatestEventCard";
+import UpcomingEventCard from "@/features/events/components/UpcomingEventCard";
+import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
-import zzCalendar from "@/assets/illustrations/zz-calendar.svg";
-import { latestEvents, upcomingEvents } from "@/data/events";
-import { UpcomingEvent } from "@/data/types";
+import zzCalendar from "@/features/events/assets/zz-calendar.svg";
+import { latestEvents, upcomingEvents } from "@/features/events/data/events";
+import { UpcomingEvent } from "@/features/events/data/types";
 
 export default function Events() {
   return (

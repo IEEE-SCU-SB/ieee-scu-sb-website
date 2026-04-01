@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
 import SocialMedia from "@/components/SocialMedia";
-import hiringIllustration from "@/assets/illustrations/hiring.svg";
-import { socialMediaLinks } from "@/data/branchContacts";
-import { recruitment } from "@/data/recruitment";
+import hiringIllustration from "@/features/join/assets/illustrations/hiring.svg";
+import { socialMediaLinks } from "@/features/contact/data/branchContacts";
+import { recruitment } from "@/features/join/data/recruitment";
 
 export default function Join() {
   return (

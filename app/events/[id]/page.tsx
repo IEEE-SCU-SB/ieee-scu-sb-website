@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import CloudinaryImage from "@/components/CloudinaryImage";
-import MegaEventGallery from "@/components/events/MegaEventGallery";
-import Header from "@/components/Header";
+import MegaEventGallery from "@/features/events/components/MegaEventGallery";
+import Header from "@/components/layout/Header";
 import SocialMedia from "@/components/SocialMedia";
-import { latestEvents } from "@/data/events";
-import { megaEventSubEvents } from "@/data/megaEventSubEvents";
+import { latestEvents } from "@/features/events/data/events";
+import { megaEventSubEvents } from "@/features/events/data/megaEventSubEvents";
 import { CalendarDaysIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
 interface PageProps {

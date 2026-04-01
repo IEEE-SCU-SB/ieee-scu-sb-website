@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import BoardCard from "@/components/committees/BoardCard";
+import BoardCard from "@/features/committees/components/BoardCard";
 import NextPageLink from "@/components/NextPageLink";
 import NotFound from "@/app/not-found";
-import { board } from "@/data/board";
-import { committees } from "@/data/committees";
+import { board } from "@/features/committees/data/board";
+import { committees } from "@/features/committees/data/committees";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {

@@ -1,8 +1,8 @@
-import GoogleMap from "@/components/contact/GoogleMap";
-import Header from "@/components/Header";
+import GoogleMap from "@/features/contact/components/GoogleMap";
+import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
 import SocialMedia from "@/components/SocialMedia";
-import { branchContacts, socialMediaLinks } from "@/data/branchContacts";
+import { branchContacts, socialMediaLinks } from "@/features/contact/data/branchContacts";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 
 export default function Contact() {

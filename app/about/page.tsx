@@ -2,10 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
-import { aboutSections } from "@/data/aboutSections";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { aboutSections } from "@/features/about/data/aboutSections";
+import { useIntersectionObserver } from "@/lib/utils/useIntersectionObserver";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const ScrollLink = ({ label, onClick }: { label: string; onClick: () => void }) => {
