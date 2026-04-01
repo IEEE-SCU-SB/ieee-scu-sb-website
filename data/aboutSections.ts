@@ -1,12 +1,12 @@
-import { AboutSection } from "./types";
-import logo from "@/assets/logos/logo.webp";
-import logoWhite from "@/assets/logos/logo-white.webp";
-import ieeeLogo from "@/assets/logos/ieee-logo.webp";
 import ieeeLogoWhite from "@/assets/logos/ieee-logo-white.webp";
-import sacLogo from "@/assets/logos/sac-logo.svg";
-import sacLogoWhite from "@/assets/logos/sac-logo-white.svg";
-import region8Logo from "@/assets/logos/region8-logo.webp";
+import ieeeLogo from "@/assets/logos/ieee-logo.webp";
+import logoWhite from "@/assets/logos/logo-white.webp";
+import logo from "@/assets/logos/logo.webp";
 import region8LogoWhite from "@/assets/logos/region8-logo-white.webp";
+import region8Logo from "@/assets/logos/region8-logo.webp";
+import sacLogoWhite from "@/assets/logos/sac-logo-white.svg";
+import sacLogo from "@/assets/logos/sac-logo.svg";
+import { AboutSection } from "./types";
 
 export const aboutSections: AboutSection[] = [
   {

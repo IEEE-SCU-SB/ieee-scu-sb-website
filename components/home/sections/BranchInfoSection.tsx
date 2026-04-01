@@ -1,15 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
-import Map from "../partials/Map";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 
-function CountUpNumber({
-  value,
-  duration = 1600,
-}: {
-  value: number;
-  duration?: number;
-}) {
+import { useEffect, useState } from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import Map from "../partials/Map";
+
+function CountUpNumber({ value, duration = 1600 }: { value: number; duration?: number }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -38,56 +33,39 @@ export default function BranchInfoSection() {
   return (
     <section
       id="branch-info"
-      className="flex flex-col gap-20 md:gap-24 md:flex-row justify-between px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12"
+      className="flex flex-col justify-between gap-20 px-4 md:flex-row md:gap-24 md:px-6 lg:px-8 xl:px-10 2xl:px-12"
     >
       <div className="flex flex-col justify-center gap-4">
-        <h2 className="mb-2">
-          IEEE SCU Student Branch - Igniting Your Potential
-        </h2>
+        <h2 className="mb-2">IEEE SCU Student Branch - Igniting Your Potential</h2>
         <p className="dark:text-slate-200">
-          IEEE&apos;s impact extends globally through its many student branches,
-          each promoting creativity and professional growth at a local level.
+          IEEE&apos;s impact extends globally through its many student branches, each promoting
+          creativity and professional growth at a local level.
         </p>
         <p className="dark:text-slate-200">
-          At Suez Canal University, we connect students with industry, offer
-          hands-on experience, and provide a platform to grow and lead.
+          At Suez Canal University, we connect students with industry, offer hands-on experience,
+          and provide a platform to grow and lead.
         </p>
 
-        <h3 className="text-base font-medium mt-4">
+        <h3 className="mt-4 text-base font-medium">
           Over the past year and continuing into this one,
           <br /> we have had:
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-6 gap-x-8 xl:gap-x-12">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 xl:gap-x-12">
           <p className="flex flex-col font-semibold">
-            <span className="text-2xl md:text-3xl font-bold text-primary">
-              {activeSection === "branch-info" ? (
-                <CountUpNumber value={220} />
-              ) : (
-                0
-              )}
-              +
+            <span className="text-primary text-2xl font-bold md:text-3xl">
+              {activeSection === "branch-info" ? <CountUpNumber value={220} /> : 0}+
             </span>
             Active Members
           </p>
           <p className="flex flex-col font-semibold">
-            <span className="text-2xl md:text-3xl font-bold text-primary">
-              {activeSection === "branch-info" ? (
-                <CountUpNumber value={40} />
-              ) : (
-                0
-              )}
-              +
+            <span className="text-primary text-2xl font-bold md:text-3xl">
+              {activeSection === "branch-info" ? <CountUpNumber value={40} /> : 0}+
             </span>
             Technical Events
           </p>
           <p className="flex flex-col font-semibold">
-            <span className="text-2xl md:text-3xl font-bold text-primary">
-              {activeSection === "branch-info" ? (
-                <CountUpNumber value={15} />
-              ) : (
-                0
-              )}
-              +
+            <span className="text-primary text-2xl font-bold md:text-3xl">
+              {activeSection === "branch-info" ? <CountUpNumber value={15} /> : 0}+
             </span>
             Non-Technical Events
           </p>

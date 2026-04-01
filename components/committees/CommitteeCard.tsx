@@ -1,12 +1,9 @@
 import Image from "next/image";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { Committee } from "@/data/types";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
-type CommitteeCardProps = Pick<
-  Committee,
-  "id" | "category" | "title" | "subtitle" | "image"
->;
+type CommitteeCardProps = Pick<Committee, "id" | "category" | "title" | "subtitle" | "image">;
 
 export default function CommitteeCard({
   id,
@@ -17,10 +14,8 @@ export default function CommitteeCard({
 }: CommitteeCardProps) {
   return (
     <div
-      className={`relative flex items-center bg-background shadow-sm py-10 px-8 rounded-xl overflow-hidden w-full max-w-md sm:max-w-lg gap-8 border ${
-        category === "non-technical"
-          ? "border-purple/15"
-          : "border-primary/15"
+      className={`bg-background relative flex w-full max-w-md items-center gap-8 overflow-hidden rounded-xl border px-8 py-10 shadow-sm sm:max-w-lg ${
+        category === "non-technical" ? "border-purple/15" : "border-primary/15"
       }`}
     >
       <div
@@ -32,15 +27,14 @@ export default function CommitteeCard({
         }`}
       ></div>
       {/* Committee Info */}
-      <div className="flex flex-col gap-4 items-start z-10 sm:max-w-[60%]">
+      <div className="z-10 flex flex-col items-start gap-4 sm:max-w-[60%]">
         <div
-          className={`text-sm font-semibold capitalize
-        ${category === "non-technical" ? "text-purple" : "text-primary"}`}
+          className={`text-sm font-semibold capitalize ${category === "non-technical" ? "text-purple" : "text-primary"}`}
         >
           {category}
         </div>
 
-        <h3 className="uppercase max-w-40 sm:max-w-64">{title}</h3>
+        <h3 className="max-w-40 uppercase sm:max-w-64">{title}</h3>
         <p className="text-slate-600 dark:text-slate-300">{subtitle}</p>
 
         <Link
@@ -50,8 +44,7 @@ export default function CommitteeCard({
           }`}
         >
           <span className="z-10 flex items-center gap-2">
-            View Details{" "}
-            <ArrowUpRightIcon className="w-3 h-3 mt-[1px] stroke-white" />
+            View Details <ArrowUpRightIcon className="mt-[1px] h-3 w-3 stroke-white" />
           </span>
         </Link>
       </div>
@@ -62,7 +55,7 @@ export default function CommitteeCard({
         alt={image.alt}
         width={80}
         height={80}
-        className="absolute top-5 right-5 sm:size-40 sm:top-1/2 sm:-translate-y-1/2"
+        className="absolute top-5 right-5 sm:top-1/2 sm:size-40 sm:-translate-y-1/2"
       />
     </div>
   );

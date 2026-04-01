@@ -6,24 +6,19 @@ type ResourceLinkProps = {
   description: string;
 };
 
-export default function ResourceLink({
-  href,
-  title,
-  description,
-}: ResourceLinkProps) {
+export default function ResourceLink({ href, title, description }: ResourceLinkProps) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block p-4 bg-primary bg-opacity-5 border border-primary border-opacity-20 rounded-lg hover:bg-opacity-10 transition"
+      className="group bg-primary bg-opacity-5 border-primary border-opacity-20 hover:bg-opacity-10 block rounded-lg border p-4 transition"
     >
-      <h3 className="font-medium text-primary-muted flex items-center gap-2 mb-2 text-base">
-        {title} <ArrowUpRightIcon className="size-3 stroke-primary mt-[1px] group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition" />
+      <h3 className="text-primary-muted mb-2 flex items-center gap-2 text-base font-medium">
+        {title}{" "}
+        <ArrowUpRightIcon className="stroke-primary mt-[1px] size-3 transition group-hover:translate-x-[2px] group-hover:-translate-y-[2px]" />
       </h3>
-      <p className="text-slate-600 dark:text-slate-300 max-w-xs text-sm">
-        {description}
-      </p>
+      <p className="max-w-xs text-sm text-slate-600 dark:text-slate-300">{description}</p>
     </a>
   );
 }

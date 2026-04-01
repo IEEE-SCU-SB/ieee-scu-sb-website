@@ -13,11 +13,11 @@ function IntroSection() {
         <span className="text-primary text-[1.25em]"> E</span>
         ngineering
       </h2>
-      <p className="max-w-3xl mx-auto text-center">
-        The world&apos;s largest technical professional organization, uniting
-        over 400,000 members globally to advance technology for humanity.
+      <p className="mx-auto max-w-3xl text-center">
+        The world&apos;s largest technical professional organization, uniting over 400,000 members
+        globally to advance technology for humanity.
       </p>
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto mt-10">
+      <div className="mx-auto mt-10 grid max-w-6xl gap-4 sm:grid-cols-2 md:grid-cols-3">
         <ResourceLink
           href={"https://www.ieee.org"}
           title={"IEEE.org"}
@@ -26,9 +26,7 @@ function IntroSection() {
         <ResourceLink
           href={"https://www.ieee.org/membership/index.html"}
           title={"Membership & Benefits"}
-          description={
-            "Join a community that fosters innovation and leadership."
-          }
+          description={"Join a community that fosters innovation and leadership."}
         />
         <ResourceLink
           href={"https://ieeexplore.ieee.org"}

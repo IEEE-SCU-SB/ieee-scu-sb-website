@@ -1,10 +1,10 @@
 import Image from "next/image";
-import type { UpcomingEvent } from "@/data/types";
-import SocialMedia from "../SocialMedia";
 import circuitPattern from "@/assets/misc/circuit-pattern.svg";
 import wavyLine from "@/assets/misc/wavy-line.svg";
-import { MapPinIcon, ClockIcon } from "@heroicons/react/24/outline";
+import type { UpcomingEvent } from "@/data/types";
+import { ClockIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { CalendarDaysIcon } from "@heroicons/react/24/solid";
+import SocialMedia from "../SocialMedia";
 
 export default function UpcomingEventCard({
   category,
@@ -20,16 +20,14 @@ export default function UpcomingEventCard({
 }: UpcomingEvent) {
   return (
     <div
-      className={`upcoming-event-card relative shadow-sm rounded-xl overflow-hidden
-        md:grid grid-cols-2 max-w-lg md:max-w-5xl mx-auto border
-        before:content-[""] before:absolute before:inset-0 before:-z-10 ${
-          category === "non-technical"
-            ? "border-purple-muted/25 before:bg-[radial-gradient(140vw_circle_at_90%_50%,_rgba(151,_71,_255,_0.2),_transparent_40%)]"
-            : "border-primary-muted/25 before:bg-[radial-gradient(140vw_circle_at_90%_50%,_rgba(9,_117,_156,_0.2),_transparent_40%)]"
-        }`}
+      className={`upcoming-event-card relative mx-auto max-w-lg grid-cols-2 overflow-hidden rounded-xl border shadow-sm before:absolute before:inset-0 before:-z-10 before:content-[""] md:grid md:max-w-5xl ${
+        category === "non-technical"
+          ? "border-purple-muted/25 before:bg-[radial-gradient(140vw_circle_at_90%_50%,_rgba(151,_71,_255,_0.2),_transparent_40%)]"
+          : "border-primary-muted/25 before:bg-[radial-gradient(140vw_circle_at_90%_50%,_rgba(9,_117,_156,_0.2),_transparent_40%)]"
+      }`}
     >
       <Image
-        className={`absolute bottom-0 opacity-40 dark:opacity-25 w-[75%] -z-10 ${
+        className={`absolute bottom-0 -z-10 w-[75%] opacity-40 dark:opacity-25 ${
           category === "technical" ? "max-w-sm" : "max-w-xl"
         }`}
         src={category === "technical" ? circuitPattern : wavyLine}
@@ -40,46 +38,40 @@ export default function UpcomingEventCard({
       <Image
         src={image.src}
         alt={image.alt}
-        className="w-full h-full md:order-2 object-cover bg-black/15"
+        className="h-full w-full bg-black/15 object-cover md:order-2"
       />
 
       {/* Event Info */}
       <div className="flex flex-col gap-4 p-4 md:p-8">
         <div>
           {/* Title */}
-          <h3 className="max-w-lg text-xl md:text-2xl mb-2">{title}</h3>
+          <h3 className="mb-2 max-w-lg text-xl md:text-2xl">{title}</h3>
           {/* Date, Time and Location */}
-          <div className="font-medium tracking-wide text-sm flex justify-between items-baseline gap-x-4 flex-wrap dark:text-slate-100">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 text-sm font-medium tracking-wide dark:text-slate-100">
             <div className="grid">
-              <p className="flex gap-1 items-baseline">
+              <p className="flex items-baseline gap-1">
                 <CalendarDaysIcon
                   className={`size-3 ${
-                    category === "technical"
-                      ? "text-primary-muted"
-                      : "text-purple-muted"
+                    category === "technical" ? "text-primary-muted" : "text-purple-muted"
                   }`}
                 />
                 {date}
               </p>
               {time && (
-                <p className="flex gap-1 items-baseline">
+                <p className="flex items-baseline gap-1">
                   <ClockIcon
                     className={`size-3 ${
-                      category === "technical"
-                        ? "text-primary-muted"
-                        : "text-purple-muted"
+                      category === "technical" ? "text-primary-muted" : "text-purple-muted"
                     }`}
                   />
                   {time}
                 </p>
               )}
             </div>
-            <p className="flex gap-1 items-baseline">
+            <p className="flex items-baseline gap-1">
               <MapPinIcon
                 className={`size-3 ${
-                  category === "technical"
-                    ? "text-primary-muted"
-                    : "text-purple-muted"
+                  category === "technical" ? "text-primary-muted" : "text-purple-muted"
                 }`}
               />
               {location}
@@ -89,9 +81,7 @@ export default function UpcomingEventCard({
         </div>
 
         {/* Description */}
-        <p className="text-sm dark:text-slate-200 whitespace-pre-line">
-          {description}
-        </p>
+        <p className="text-sm whitespace-pre-line dark:text-slate-200">{description}</p>
 
         {/* Tags */}
         {tags && (
@@ -100,7 +90,7 @@ export default function UpcomingEventCard({
               {tags.map((tag, i) => (
                 <li
                   key={i}
-                  className={`text-xs py-1 px-3 rounded-md font-medium text-slate-900 dark:text-slate-200 border bg-opacity-20 border-opacity-30 ${
+                  className={`bg-opacity-20 border-opacity-30 rounded-md border px-3 py-1 text-xs font-medium text-slate-900 dark:text-slate-200 ${
                     category === "technical"
                       ? "bg-primary border-primary"
                       : "bg-purple border-purple"
@@ -116,7 +106,7 @@ export default function UpcomingEventCard({
         {/* Links of Event on Social Media */}
         {socialMediaPostLinks && (
           <div>
-            <h4 className="text-sm font-medium mb-2">More details:</h4>
+            <h4 className="mb-2 text-sm font-medium">More details:</h4>
             <SocialMedia
               accent="black"
               size={4}
@@ -132,7 +122,7 @@ export default function UpcomingEventCard({
         <a
           href={RegistrationLink}
           target="_blank"
-          className={`btn-primary text-white mt-auto ${
+          className={`btn-primary mt-auto text-white ${
             category === "technical" ? "bg-primary" : "bg-purple"
           }`}
         >

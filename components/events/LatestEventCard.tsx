@@ -1,87 +1,112 @@
-import CloudinaryImage from "@/components/CloudinaryImage";
-import type {LatestEvent} from "@/data/types";
-import SocialMedia from "../SocialMedia";
-import {CalendarDaysIcon} from "@heroicons/react/24/solid";
-import {MapPinIcon, ArrowRightIcon} from "@heroicons/react/24/outline";
 import Link from "next/link";
+import CloudinaryImage from "@/components/CloudinaryImage";
+import type { LatestEvent } from "@/data/types";
+import { ArrowRightIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import { CalendarDaysIcon } from "@heroicons/react/24/solid";
+import SocialMedia from "../SocialMedia";
 
-export default function LatestEventCard({category, title, date, location, description, image, socialMediaPostLinks, megaEvent}: LatestEvent) {
-	const isMegaEvent = Object.hasOwn(megaEvent || {}, "nestedPath");
-	return (
-		<div
-			className={`flex flex-col shadow-sm rounded-xl overflow-hidden mx-auto max-w-lg border ${
-				category === "non-technical" ? "border-purple-muted/20 bg-purple-muted/5" : "border-primary-muted/20 bg-primary-muted/5"
-			} ${
-				isMegaEvent
-					? " border-[#fdb848] shadow-lg shadow-amber-300/40 dark:from-[#0f253a] dark:via-[#413015] dark:to-[#0f253a] dark:border-[#fdb848]/40 dark:shadow-[#e7ac4d]/40"
-					: ""
-			}`}
-		>
-			{/* Event Image */}
-			<CloudinaryImage
-				src={image.src?.toString()}
-				alt={image.alt}
-				width={490}
-				height={277}
-				className='w-full object-center object-cover aspect-video bg-black/15'
-			/>
+export default function LatestEventCard({
+  category,
+  title,
+  date,
+  location,
+  description,
+  image,
+  socialMediaPostLinks,
+  megaEvent,
+}: LatestEvent) {
+  const isMegaEvent = Object.hasOwn(megaEvent || {}, "nestedPath");
+  return (
+    <div
+      className={`mx-auto flex max-w-lg flex-col overflow-hidden rounded-xl border shadow-sm ${
+        category === "non-technical"
+          ? "border-purple-muted/20 bg-purple-muted/5"
+          : "border-primary-muted/20 bg-primary-muted/5"
+      } ${
+        isMegaEvent
+          ? "border-[#fdb848] shadow-lg shadow-amber-300/40 dark:border-[#fdb848]/40 dark:from-[#0f253a] dark:via-[#413015] dark:to-[#0f253a] dark:shadow-[#e7ac4d]/40"
+          : ""
+      }`}
+    >
+      {/* Event Image */}
+      <CloudinaryImage
+        src={image.src?.toString()}
+        alt={image.alt}
+        width={490}
+        height={277}
+        className="aspect-video w-full bg-black/15 object-cover object-center"
+      />
 
-			{/* Event Info */}
-			<div className='grow  flex flex-col gap-4 p-4 md:p-6'>
-				<div>
-					{/* Title */}
-					<h3 className={`max-w-lg text-lg md:text-xl mb-2 ${isMegaEvent ? "text-[#af6d03] font-semibold dark:text-[#fdb848]" : ""} `}>{title}</h3>
-					{/* Date and Location */}
-					<div className={`font-medium tracking-wide text-sm flex justify-between items-baseline gap-x-4 flex-wrap `}>
-						<p className='flex gap-1 items-baseline'>
-							<CalendarDaysIcon
-								className={`size-3 ${
-									isMegaEvent ? "text-amber-600 dark:text-[#fdb848]" : category === "technical" ? "text-primary-muted" : "text-purple-muted"
-								}`}
-							/>
-							{date}
-						</p>
-						<p className='flex gap-1 items-baseline'>
-							<MapPinIcon
-								className={`size-3 ${
-									isMegaEvent ? "text-amber-600 dark:text-[#fdb848]" : category === "technical" ? "text-primary-muted" : "text-purple-muted"
-								}`}
-							/>
-							{location}
-						</p>
-					</div>
-					<hr className='mt-2' />
-				</div>
+      {/* Event Info */}
+      <div className="flex grow flex-col gap-4 p-4 md:p-6">
+        <div>
+          {/* Title */}
+          <h3
+            className={`mb-2 max-w-lg text-lg md:text-xl ${isMegaEvent ? "font-semibold text-[#af6d03] dark:text-[#fdb848]" : ""} `}
+          >
+            {title}
+          </h3>
+          {/* Date and Location */}
+          <div
+            className={`flex flex-wrap items-baseline justify-between gap-x-4 text-sm font-medium tracking-wide`}
+          >
+            <p className="flex items-baseline gap-1">
+              <CalendarDaysIcon
+                className={`size-3 ${
+                  isMegaEvent
+                    ? "text-amber-600 dark:text-[#fdb848]"
+                    : category === "technical"
+                      ? "text-primary-muted"
+                      : "text-purple-muted"
+                }`}
+              />
+              {date}
+            </p>
+            <p className="flex items-baseline gap-1">
+              <MapPinIcon
+                className={`size-3 ${
+                  isMegaEvent
+                    ? "text-amber-600 dark:text-[#fdb848]"
+                    : category === "technical"
+                      ? "text-primary-muted"
+                      : "text-purple-muted"
+                }`}
+              />
+              {location}
+            </p>
+          </div>
+          <hr className="mt-2" />
+        </div>
 
-				{/* Description */}
-				<p className={`text-sm whitespace-pre-line`}>{description}</p>
+        {/* Description */}
+        <p className={`text-sm whitespace-pre-line`}>{description}</p>
 
-				{/* Links of Event on Social Media */}
-				<div className='flex mt-auto items-center'>
-					{socialMediaPostLinks && (
-						<div className='mt-auto'>
-							<h4 className={`text-sm font-medium mb-2 `}>More details:</h4>
-							<SocialMedia
-								accent='black'
-								size={4}
-								facebook={socialMediaPostLinks.facebook}
-								instagram={socialMediaPostLinks.instagram}
-								linkedin={socialMediaPostLinks.linkedin}
-								tiktok={socialMediaPostLinks.tiktok}
-							/>
-						</div>
-					)}
-					{isMegaEvent && (
-						<Link
-							href={`/events${megaEvent && megaEvent.nestedPath}`}
-							className='text-[#af6d03] font-semibold dark:text-[#fdb848] mt-auto hover:underline ml-auto '
-						>
-							View Highlights
-							<ArrowRightIcon className='size-4 ml-1 inline' />
-						</Link>
-					)}
-				</div>
-			</div>
-		</div>
-	);
+        {/* Links of Event on Social Media */}
+        <div className="mt-auto flex items-center">
+          {socialMediaPostLinks && (
+            <div className="mt-auto">
+              <h4 className={`mb-2 text-sm font-medium`}>More details:</h4>
+              <SocialMedia
+                accent="black"
+                size={4}
+                facebook={socialMediaPostLinks.facebook}
+                instagram={socialMediaPostLinks.instagram}
+                linkedin={socialMediaPostLinks.linkedin}
+                tiktok={socialMediaPostLinks.tiktok}
+              />
+            </div>
+          )}
+          {isMegaEvent && (
+            <Link
+              href={`/events${megaEvent && megaEvent.nestedPath}`}
+              className="mt-auto ml-auto font-semibold text-[#af6d03] hover:underline dark:text-[#fdb848]"
+            >
+              View Highlights
+              <ArrowRightIcon className="ml-1 inline size-4" />
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }

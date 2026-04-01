@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { useEffect, useState } from "react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -55,7 +56,7 @@ export default function InteractiveGridPattern({
       width={width * horizontal}
       height={height * vertical}
       className={cn(
-        "absolute inset-0 w-full h-full xl:h-fit xl:w-fit m-auto [mask-image:radial-gradient(max(45vw,300px)_circle_at_center,white,transparent)]",
+        "absolute inset-0 m-auto h-full w-full [mask-image:radial-gradient(max(45vw,300px)_circle_at_center,white,transparent)] xl:h-fit xl:w-fit",
         className
       )}
       {...props}
@@ -71,8 +72,10 @@ export default function InteractiveGridPattern({
             width={width}
             height={height}
             className={cn(
-              "stroke-slate-600/10 dark:stroke-primary/10 transition-all duration-100 ease-in-out [&:not(:hover)]:duration-1000 m-auto",
-              hoveredSquare === index || activeSquare === index ? "fill-primary/75" : "fill-transparent",
+              "dark:stroke-primary/10 m-auto stroke-slate-600/10 transition-all duration-100 ease-in-out [&:not(:hover)]:duration-1000",
+              hoveredSquare === index || activeSquare === index
+                ? "fill-primary/75"
+                : "fill-transparent",
               squaresClassName
             )}
             onMouseEnter={() => setHoveredSquare(index)}

@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+pnpm-lock.yaml
+
+# Build outputs
+.next
+out
+dist
+build
+
+# Cache
+.turbo
+.cache

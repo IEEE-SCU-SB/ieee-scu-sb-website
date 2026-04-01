@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from "react";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 export default function SelectTheme({ className }: { className?: string }) {
   const [theme, setTheme] = useState<"light" | "dark" | null>(null);
@@ -8,9 +8,7 @@ export default function SelectTheme({ className }: { className?: string }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedTheme = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
       if (savedTheme === "dark" || (savedTheme === null && prefersDark)) {
         setTheme("dark");
@@ -45,13 +43,10 @@ export default function SelectTheme({ className }: { className?: string }) {
   if (theme === null) return null;
 
   return (
-    <button
-      onClick={toggleTheme}
-      className={`flex gap-2 items-center ${className}`}
-    >
-      <span className="lg:p-2 rounded-full lg:hover:bg-slate-100 lg:dark:hover:bg-slate-800">
+    <button onClick={toggleTheme} className={`flex items-center gap-2 ${className}`}>
+      <span className="rounded-full lg:p-2 lg:hover:bg-slate-100 lg:dark:hover:bg-slate-800">
         {theme === "light" ? (
-          <MoonIcon className="size-5 text-primary" />
+          <MoonIcon className="text-primary size-5" />
         ) : (
           <SunIcon className="size-5 text-yellow-400" />
         )}

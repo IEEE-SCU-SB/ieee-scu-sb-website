@@ -1,4 +1,4 @@
-export default function AwardBranchesVector({ className } : {className? : string}) {
+export default function AwardBranchesVector({ className }: { className?: string }) {
   return (
     <svg
       width="24"

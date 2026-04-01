@@ -1,17 +1,16 @@
 "use client";
+
 import { useState } from "react";
 
 export default function GoogleMap() {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   return (
-    <div className="w-full h-64 bg-black/15 rounded-lg overflow-hidden relative">
+    <div className="relative h-64 w-full overflow-hidden rounded-lg bg-black/15">
       {/* Skeleton Loader */}
       {!mapLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-slate-300 dark:bg-slate-700 animate-pulse">
-          <p className="text-slate-600 dark:text-slate-400 text-sm">
-            Loading map...
-          </p>
+        <div className="absolute inset-0 flex animate-pulse items-center justify-center bg-slate-300 dark:bg-slate-700">
+          <p className="text-sm text-slate-600 dark:text-slate-400">Loading map...</p>
         </div>
       )}
 
@@ -20,7 +19,7 @@ export default function GoogleMap() {
         allowFullScreen={false}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-full"
+        className="h-full w-full"
         onLoad={() => setMapLoaded(true)}
         title="Google Map showing our location in Ismailia, Egypt"
       ></iframe>

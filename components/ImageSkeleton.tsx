@@ -1,12 +1,9 @@
 export default function ImageSkeleton() {
   return (
-    <div
-      role="status"
-      className="w-full h-full max-w-sm absolute inset-0 z-10 pointer-events-none"
-    >
-      <div className="animate-pulse w-full h-full bg-gray-300 dark:bg-gray-800 flex justify-center items-center">
+    <div role="status" className="pointer-events-none absolute inset-0 z-10 h-full w-full max-w-sm">
+      <div className="flex h-full w-full animate-pulse items-center justify-center bg-gray-300 dark:bg-gray-800">
         <svg
-          className="w-8 h-8 stroke-gray-400 dark:stroke-gray-600"
+          className="h-8 w-8 stroke-gray-400 dark:stroke-gray-600"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

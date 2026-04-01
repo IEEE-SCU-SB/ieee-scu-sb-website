@@ -10,7 +10,6 @@ export const branchContacts: BranchContacts = {
 export const socialMediaLinks: SocialMedia = {
   facebook: "https://www.facebook.com/IEEESCU",
   instagram: "https://www.instagram.com/ieee_scu_sb",
-  linkedin:
-    "https://www.linkedin.com/company/ieee-suez-canal-university-student-branch",
+  linkedin: "https://www.linkedin.com/company/ieee-suez-canal-university-student-branch",
   tiktok: "https://www.tiktok.com/@ieeescu24",
 };

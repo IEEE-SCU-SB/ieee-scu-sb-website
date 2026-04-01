@@ -1,7 +1,8 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
-import { ImageType } from "@/data/types";
 import { CldImage } from "next-cloudinary";
+import { ImageType } from "@/data/types";
 import ImageSkeleton from "./ImageSkeleton";
 
 interface MarqueeProps {
@@ -37,9 +38,7 @@ export default function Marquee({ images, scrollDirection }: MarqueeProps) {
     };
 
     const interval =
-      scrollDirection == "left"
-        ? setInterval(autoScroll, 30)
-        : setInterval(autoScroll, 15);
+      scrollDirection == "left" ? setInterval(autoScroll, 30) : setInterval(autoScroll, 15);
 
     return () => {
       clearInterval(interval);
@@ -55,13 +54,10 @@ export default function Marquee({ images, scrollDirection }: MarqueeProps) {
   };
 
   return (
-    <div
-      ref={marqueeRef}
-      className="overflow-x-auto overflow-y-hidden no-scrollbar"
-    >
-      <div className="flex h-[22vh] md:h-[14em] divide-x-[24px] divide-transparent">
+    <div ref={marqueeRef} className="no-scrollbar overflow-x-auto overflow-y-hidden">
+      <div className="flex h-[22vh] divide-x-[24px] divide-transparent md:h-[14em]">
         {images.concat(images).map((img, index) => (
-          <div key={index} className="flex-shrink-0 relative">
+          <div key={index} className="relative flex-shrink-0">
             {!loadedImages[index] && <ImageSkeleton />}
             <CldImage
               src={img.src.toString()}
