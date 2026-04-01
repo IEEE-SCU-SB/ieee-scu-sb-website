@@ -2,13 +2,13 @@
 
 <div align="center">
 
-![IEEE SCU Logo](./src/assets/logos/logo.webp)
+![IEEE SCU Logo](./assets/logos/logo.webp)
 
 **Official website for IEEE Suez Canal University Student Branch**
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.17-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.2.2-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com/)
 
 🏆 **Winner of 2025 Egypt Section Outstanding Student Branch Website Award**
@@ -75,10 +75,10 @@ workshops, bootcamps, competitions, and talks.
 
 ### Frontend
 
-- **[Next.js 15.5.4](https://nextjs.org/)** - React framework with App Router
+- **[Next.js 16.2.2](https://nextjs.org/)** - React framework with App Router
 - **[React 19.1.1](https://react.dev/)** - UI library with latest features
 - **[TypeScript 5.9.2](https://www.typescriptlang.org/)** - Type-safe development
-- **[Tailwind CSS 3.4.17](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Tailwind CSS 4.2.2](https://tailwindcss.com/)** - Utility-first CSS framework
 
 ### Styling & UI
 
@@ -108,42 +108,17 @@ workshops, bootcamps, competitions, and talks.
 
 ```
 ieee-scu-sb-website/
-├── src/
-│   ├── app/                    # Next.js App Router pages
-│   │   ├── about/             # About page
-│   │   ├── committees/        # Committees pages
-│   │   │   └── [id]/         # Dynamic committee detail pages
-│   │   ├── contact/          # Contact page
-│   │   ├── developers/       # Developers page
-│   │   ├── events/           # Events page
-│   │   ├── join/             # Join page
-│   │   ├── layout.tsx        # Root layout
-│   │   └── page.tsx          # Home page
-│   ├── components/           # Reusable React components
-│   │   ├── committees/       # Committee-specific components
-│   │   ├── contact/          # Contact page components
-│   │   ├── events/           # Event components
-│   │   └── home/             # Home page sections
-│   ├── data/                 # Data layer and type definitions
-│   │   ├── aboutSections.ts  # About page content
-│   │   ├── awards.ts         # Achievement data
-│   │   ├── board.ts          # Committee heads and members
-│   │   ├── committees.ts     # Committee information
-│   │   ├── events.ts         # Event data
-│   │   ├── officers.ts       # High board officers
-│   │   └── types.ts          # TypeScript interfaces
-│   ├── assets/               # Static assets
-│   │   ├── board/           # Committee head photos
-│   │   ├── events/          # Event images
-│   │   ├── illustrations/   # SVG illustrations
-│   │   └── logos/           # Brand logos
-│   └── hooks/               # Custom React hooks
+├── app/                     # Next.js App Router pages
+├── components/              # Reusable React components
+├── data/                    # Data layer and type definitions
+├── assets/                  # Static assets
+├── hooks/                   # Custom React hooks
 ├── public/                  # Public static files
 │   ├── favicon.ico         # Website favicon
 │   ├── robots.txt          # Search engine directives
 │   └── sitemap.xml         # XML sitemap
 ├── next.config.mjs         # Next.js configuration
-├── tailwind.config.ts      # Tailwind CSS configuration
+├── postcss.config.mjs      # Tailwind/PostCSS configuration
 └── package.json           # Project dependencies
 ```
 
@@ -198,21 +173,21 @@ pnpm postbuild    # Runs after build to generate sitemap
 
 ### Adding New Committee Members
 
-1. **Update committee data** in `src/data/committees.ts`
-2. **Add board member info** in `src/data/board.ts`
-3. **Add member photos** to `src/assets/board/`
-4. **Update types** if needed in `src/data/types.ts`
+1. **Update committee data** in `data/committees.ts`
+2. **Add board member info** in `data/board.ts`
+3. **Add member photos** to `assets/board/`
+4. **Update types** if needed in `data/types.ts`
 
 ### Adding New Events
 
-1. **Add event data** to `src/data/events.ts`
-2. **Upload event images** to `src/assets/events/`
+1. **Add event data** to `data/events.ts`
+2. **Upload event images** to `assets/events/`
 3. **Update categories** (technical/non-technical)
 
 ### Managing Officers
 
-1. **Update officer info** in `src/data/officers.ts`
-2. **Add photos** to `src/assets/highboard/`
+1. **Update officer info** in `data/officers.ts`
+2. **Add photos** to `assets/highboard/`
 
 ## 📱 Browser Support
 

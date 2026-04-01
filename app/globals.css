@@ -1,0 +1,291 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+	--color-background: rgb(var(--background));
+	--color-foreground: rgb(var(--foreground));
+	--color-primary: rgb(var(--primary));
+	--color-primary-muted: rgb(var(--primary-muted));
+	--color-purple: rgb(var(--purple));
+	--color-purple-muted: rgb(var(--purple-muted));
+	--color-border: rgb(var(--border));
+
+	--animate-reveal: reveal 1s linear forwards;
+	--animate-gradient-slide: gradientSlide 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	--animate-fade-in: fadeIn 0.5s ease-out forwards;
+}
+
+/* Theme (RGB Values) */
+:root {
+	--background: 255 255 255;
+	--foreground: 0 0 0;
+	--primary: 45 121 183;
+	--primary-muted: 35 103 161;
+	--purple: 132 56 230;
+	--purple-muted: 120 50 210;
+	--border: 229 231 235;
+}
+
+.dark {
+	--background: 10 20 32;
+	--foreground: 255 255 255;
+	--primary: 61 143 224;
+	--primary-muted: 75 160 255;
+	--purple: 176 102 255;
+	--purple-muted: 190 130 255;
+	--border: 30 41 59;
+}
+
+/* Scrolling Defaults */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6em;
+}
+
+/* Layout */
+nav,
+main,
+footer {
+	@apply px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12;
+}
+
+main {
+	@apply flex flex-col gap-20 md:gap-24 lg:gap-28 py-10;
+}
+
+/* Typography */
+:root {
+	@apply text-sm lg:text-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+	@apply font-black;
+}
+
+h2 {
+	font-size: clamp(1.35rem, 2.2vw + 0.2rem, 1.85rem);
+	@apply font-extrabold;
+}
+
+h3 {
+	font-size: clamp(1.2rem, 1.6vw + 0.2rem, 1.6rem);
+}
+
+h4 {
+	font-size: clamp(1.1rem, 1.2vw + 0.15rem, 1.35rem);
+}
+
+h5 {
+	font-size: clamp(1.05rem, 0.9vw + 0.15rem, 1.2rem);
+}
+
+h6 {
+	font-size: clamp(1rem, 0.7vw + 0.1rem, 1.1rem);
+}
+
+/* Utilities */
+@layer utilities {
+	.text-shadow {
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	}
+	.no-scrollbar {
+		scrollbar-width: none; /* For Firefox */
+		-ms-overflow-style: none; /* For Internet Explorer */
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none; /* For Chrome, Edge, and Safari */
+	}
+
+	.clip {
+		clip-path: inset(0 100% 0 0);
+	}
+}
+
+/* Styled Components */
+hr {
+	@apply dark:border-slate-800;
+}
+
+.btn-primary {
+	@apply text-xs font-semibold tracking-wider px-4 py-2 rounded-3xl uppercase flex justify-center items-center gap-2 cursor-pointer relative;
+}
+
+.btn-primary::before {
+	@apply content-[""] absolute inset-0 bg-black scale-0 transition duration-300 rounded-3xl;
+}
+
+.btn-primary:hover::before {
+	@apply scale-100 origin-left;
+}
+
+/* chair card alignment */
+.officer-card:nth-of-type(2) {
+	@apply -order-1 sm:order-none sm:-translate-y-10;
+}
+
+/* ------------------- Animations ------------------- */
+/* Officers Section Line Animation */
+.line {
+	@apply relative h-[1.5px] w-full overflow-hidden bg-transparent;
+}
+
+.line::after {
+	@apply content-[""] absolute h-full w-[60%];
+	background: linear-gradient(to right, transparent 0%, #4a90e2 75%, transparent 100%);
+	animation: slide-left 6s linear infinite;
+}
+
+.line:nth-child(even)::after {
+	animation: slide-right 6s linear infinite;
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(200%);
+	}
+	100% {
+		transform: translateX(-150%);
+	}
+}
+
+@keyframes slide-right {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(200%);
+	}
+}
+
+/* MOTM Shine Animation */
+.gold-shine {
+	color: #bfa209;
+	background: linear-gradient(90deg, #b8860b, #ffd700, #b8860b);
+	background-size: 200%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 10s infinite linear;
+}
+
+@keyframes shine {
+	0% {
+		background-position: 200%;
+	}
+	100% {
+		background-position: -200%;
+	}
+}
+
+/* Bell Shake Animation */
+.bell {
+	animation: bellshake 2.2s ease-in-out infinite;
+	transform-origin: top right;
+}
+
+@keyframes bellshake {
+	0% {
+		transform: rotate(0) scale(1) translateY(0);
+		filter: drop-shadow(0 0 0 transparent);
+	}
+
+	5% {
+		transform: rotate(6deg) scale(1.1) translateY(-4px);
+		filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+	}
+
+	10% {
+		transform: rotate(-6deg) scale(1.1) translateY(-4px);
+		filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+	}
+
+	15% {
+		transform: rotate(5deg) scale(1.05) translateY(-2px);
+		filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.6));
+	}
+
+	20% {
+		transform: rotate(-5deg) scale(1.05) translateY(-2px);
+		filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.4));
+	}
+
+	25% {
+		transform: rotate(3deg) scale(1.05) translateY(-2px);
+		filter: drop-shadow(0 4px 4px rgba(255, 0, 0, 0.2));
+	}
+
+	30% {
+		transform: rotate(-3deg) scale(1.02) translateY(-1px);
+	}
+
+	35% {
+		transform: rotate(1deg) scale(1.01) translateY(0);
+	}
+
+	40% {
+		transform: rotate(0) scale(1) translateY(0);
+		filter: drop-shadow(0 0 0 transparent);
+	}
+
+	100% {
+		transform: rotate(0) scale(1) translateY(0);
+		filter: drop-shadow(0 0 0 transparent);
+	}
+}
+
+/* Award card animation */
+.award-card::after {
+	content: "";
+	position: absolute;
+	width: 99.5%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: inherit;
+	box-shadow:
+		0 0 25px rgba(255, 215, 0, 0.15),
+		0 0 50px rgba(0, 140, 255, 0.05),
+		inset 0 0 15px rgba(255, 215, 0, 0.1);
+	pointer-events: none;
+}
+
+.award-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 150%;
+	height: 100%;
+	background-image: linear-gradient(128deg, transparent 50%, hsla(32, 100%, 70%, 0.1), transparent 60%);
+	animation: shiny-sweep 3.4s linear infinite;
+}
+
+@keyframes shiny-sweep {
+	0% {
+		right: -100%;
+	}
+	25% {
+		right: 100%;
+	}
+	50% {
+		right: 100%;
+	}
+	75% {
+		right: 100%;
+	}
+	100% {
+		right: 100%;
+	}
+}
