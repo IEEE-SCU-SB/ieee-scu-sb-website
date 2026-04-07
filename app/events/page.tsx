@@ -1,11 +1,12 @@
-import Image from "next/image";
-import LatestEventCard from "@/features/events/components/LatestEventCard";
-import UpcomingEventCard from "@/features/events/components/UpcomingEventCard";
+// import Image from "next/image";
 import Header from "@/components/layout/Header";
 import NextPageLink from "@/components/NextPageLink";
-import zzCalendar from "@/features/events/assets/zz-calendar.svg";
+// import zzCalendar from "@/features/events/assets/zz-calendar.svg";
+import LatestEventCard from "@/features/events/components/LatestEventCard";
+// import UpcomingEventCard from "@/features/events/components/UpcomingEventCard";
 import { latestEvents, upcomingEvents } from "@/features/events/data/events";
-import { UpcomingEvent } from "@/features/events/data/types";
+
+// import { UpcomingEvent } from "@/features/events/data/types";
 
 export default function Events() {
   return (
@@ -17,7 +18,7 @@ export default function Events() {
         </p>
       </Header>
       <main>
-        <section>
+        {/* <section>
           <h2 className="mb-8 text-center">Upcoming Events</h2>
           {upcomingEvents && upcomingEvents.length != 0 && (
             <div className="flex flex-col gap-8">
@@ -48,10 +49,10 @@ export default function Events() {
                 </p>
               </div>
             ))}
-        </section>
+        </section> */}
 
         <section>
-          <h2 className="mb-8 text-center">Latest Events</h2>
+          {/* <h2 className="mb-8 text-center">Latest Events</h2> */}
           <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
             {latestEvents.map((event, index) => (
               <LatestEventCard

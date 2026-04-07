@@ -5,6 +5,25 @@ export const upcomingEvents: UpcomingEvent[] = [];
 export const latestEvents: LatestEvent[] = [
   {
     category: "technical",
+    title: "Tech Nights V.2",
+    date: "Feb 28, 2026 - Ramadan",
+    location: "online",
+    description:
+      "Tech Nights is an online learning series that brings together learners and tech enthusiasts to explore modern technologies through focused sessions. Topics included Artificial Intelligence, Cybersecurity, Front- and Back-end Web Development, and Electronics. The series provided practical insights, demos, and guidance to help attendees stay current in today's fast-paced tech landscape.",
+    image: {
+      src: "https://res.cloudinary.com/ieeescusb/image/upload/v1763126697/tech_nights_ofpqrp.webp",
+      alt: "Tech Nights",
+    },
+    socialMediaPostLinks: {
+      facebook: "https://www.facebook.com/share/p/186rJsWfS2/?mibextid=wwXIfr",
+      instagram: "https://www.instagram.com/p/DU8zJtaDOMn/?igsh=MWp6c2FkZzM4N2YyMA==",
+      linkedin:
+        "https://www.linkedin.com/posts/ieee-suez-canal-university-student-branch_technights-aesaeyaepaesaeyabraezaetaeeaepaeu-activity-7430322524149739520-pvXB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFF8tjYBnaZtXG_emrT5-i_wq_xUiH3V7V0",
+    },
+    megaEvent: false,
+  },
+  {
+    category: "technical",
     title: "TechXplore",
     date: "Nov, Dec 2025",
     location: "Creativa & ITI",
@@ -68,7 +87,7 @@ export const latestEvents: LatestEvent[] = [
   {
     category: "non-technical",
     title: "Skill it up",
-    date: "Apr 29, 2024",
+    date: "Apr 29, 2025",
     location: "Creativa & ITI",
     description:
       "Skill It Up was a practical, hands-on event at Creativa Hub and ITI that empowered students and early-career professionals with essential workplace and creative skills. Sessions covered Marketing & Video Editing, Voice & Body Language for confident communication, Professional Writing for effective emails and reports, and Business Negotiation techniques.",
@@ -87,7 +106,7 @@ export const latestEvents: LatestEvent[] = [
   {
     category: "technical",
     title: "Tech Nights",
-    date: "Mar 1, 2024",
+    date: "Mar 1, 2025 - Ramadan",
     location: "online",
     description:
       "Tech Nights is an online learning series that brings together learners and tech enthusiasts to explore modern technologies through focused sessions. Topics included Artificial Intelligence, Cybersecurity, Front- and Back-end Web Development, and Electronics. The series provided practical insights, demos, and guidance to help attendees stay current in today's fast-paced tech landscape.",
