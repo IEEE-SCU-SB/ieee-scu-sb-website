@@ -1,9 +1,5 @@
-import { StaticImageData } from "next/image";
+import { ImageType } from "@/lib/types"
 
-export interface ImageType {
-  src: StaticImageData | string;
-  alt: string;
-}
 
 export interface BoardMember {
   name: string;

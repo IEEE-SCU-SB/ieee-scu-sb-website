@@ -1,6 +1,15 @@
-import { Motm } from "@/features/home/data/types";
+import { ImageType } from "@/lib/types";
 
-// import motmPhoto from "@/assets/motm.webp";
+type Motm = {
+  name: string;
+  committee: {
+    name: string;
+    link: string;
+  };
+  image?: ImageType;
+  linkedin?: string;
+  published: boolean;
+};
 
 export const motm: Motm = {
   name: "Amira Ashraf",

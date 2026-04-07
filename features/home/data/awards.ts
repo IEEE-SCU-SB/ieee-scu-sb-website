@@ -1,6 +1,11 @@
-import { Award } from "@/features/home/data/types";
-
 // Note: Awards are in chronological order, arranged from earliest to latest in the data structure.
+
+interface Award {
+  subtitle: string;
+  title: string;
+  date: string;
+  place?: string;
+}
 
 export const awards: Award[] = [
   {

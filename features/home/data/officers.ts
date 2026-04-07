@@ -4,7 +4,15 @@ import treasurer from "@/features/home/assets/treasurer.webp";
 import vice1 from "@/features/home/assets/vice1.webp";
 import vice2 from "@/features/home/assets/vice2.webp";
 import webmaster from "@/features/home/assets/webmaster.webp";
-import { Officer } from "@/features/home/data/types";
+import { ImageType } from "@/lib/types";
+
+export interface Officer {
+  name: string;
+  position: string;
+  image: ImageType;
+  linkedin: string;
+  mail: string;
+}
 
 export const officers: Officer[] = [
   {
@@ -25,8 +33,7 @@ export const officers: Officer[] = [
     name: "Yara Ali",
     position: "Vice Chair",
     image: { src: vice2, alt: "Vice Chair" },
-    linkedin:
-      "https://www.linkedin.com/in/yara-ali-821061344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedin: "https://www.linkedin.com/in/yara-ali-821061344",
     mail: "yaraalimaati2@gmail.com",
   },
   {

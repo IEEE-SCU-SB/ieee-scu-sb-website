@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CldImage } from "next-cloudinary";
 import ImageSkeleton from "@/components/ImageSkeleton";
-import { ImageType } from "@/features/home/data/types";
+import { ImageType } from "@/lib/types";
 
 interface MarqueeProps {
   images: ImageType[];

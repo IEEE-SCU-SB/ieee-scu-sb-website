@@ -1,5 +1,5 @@
-import Marquee from "@/features/home/components/Marquee";
 import doodles from "@/features/home/assets/confetti-doodles.svg";
+import Marquee from "@/features/home/components/Marquee";
 import { bottomMarqueeImages, topMarqueeImages } from "@/features/home/data/MarqueeImageUrls";
 
 export default function MarqueeSection() {

@@ -1,9 +1,4 @@
-import { StaticImageData } from "next/image";
-
-export interface ImageType {
-  src: StaticImageData | string;
-  alt: string;
-}
+import { ImageType } from "@/lib/types"
 
 export interface AboutSection {
   id: string;

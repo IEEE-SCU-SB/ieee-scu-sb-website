@@ -1,4 +1,4 @@
-import { ImageType } from "@/features/home/data/types";
+import { ImageType } from "@/lib/types";
 
 const alt = "IEEE members engaging in various activities";
 
