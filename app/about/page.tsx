@@ -8,19 +8,6 @@ import { aboutSections } from "@/features/about/data/aboutSections";
 import { useIntersectionObserver } from "@/lib/utils/useIntersectionObserver";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
-const ScrollLink = ({ label, onClick }: { label: string; onClick: () => void }) => {
-  return (
-    <li>
-      <button
-        className="bg-primary bg-opacity-5 border-primary border-opacity-15 hover:bg-opacity-10 focus:bg-opacity-10 cursor-pointer rounded-full border px-4 py-2 text-sm font-medium text-slate-800 transition dark:text-slate-200"
-        onClick={onClick}
-      >
-        {label}
-      </button>
-    </li>
-  );
-};
-
 export default function About() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const whoAreWeRef = useRef<HTMLElement>(null);
@@ -67,11 +54,14 @@ export default function About() {
         <nav>
           <ul className="mt-4 flex flex-wrap justify-center gap-2">
             {scrollLinks.map((link, index) => (
-              <ScrollLink
-                key={index}
-                label={link.label}
-                onClick={() => scrollToSection(link.ref)}
-              />
+              <li key={index}>
+                <button
+                  className="bg-primary bg-opacity-5 border-primary border-opacity-15 hover:bg-opacity-10 focus:bg-opacity-10 cursor-pointer rounded-full border px-4 py-2 text-sm font-medium text-slate-800 transition dark:text-slate-200"
+                  onClick={() => scrollToSection(link.ref)}
+                >
+                  {link.label}
+                </button>
+              </li>
             ))}
           </ul>
         </nav>

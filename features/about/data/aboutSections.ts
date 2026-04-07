@@ -6,7 +6,16 @@ import region8LogoWhite from "@/assets/logos/region8-logo-white.webp";
 import region8Logo from "@/assets/logos/region8-logo.webp";
 import sacLogoWhite from "@/assets/logos/sac-logo-white.svg";
 import sacLogo from "@/assets/logos/sac-logo.svg";
-import { AboutSection } from "@/features/about/data/types";
+import { ImageType } from "@/lib/types";
+
+interface AboutSection {
+  id: string;
+  label: string;
+  logo: ImageType;
+  logoWhite: ImageType;
+  description: string;
+  learnMoreLink?: { title: string; url: string };
+}
 
 export const aboutSections: AboutSection[] = [
   {
