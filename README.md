@@ -224,7 +224,8 @@ pnpm postbuild    # Runs after build to generate sitemap
 
 ### Website Development Team
 
-- **Current Webmaster**: [Mohamed Alsaeed](https://www.linkedin.com/in/saeedinum) (Sep 2025 - present)
+- **Current Webmaster**: [Ahmed Gamal](https://www.linkedin.com/in/ahmed-gamal-zahran) (Sep 2026 - present)
+- **Previous Webmaster**: [Mohamed Alsaeed](https://www.linkedin.com/in/saeedinum) (Sep 2025 - Aug 2026)
 - **Previous Webmaster**: [Mostafa Hashem](https://www.linkedin.com/in/mostafaaa-hashem) (Sep 2024 - Aug 2025)
 
 ## 📄 License
